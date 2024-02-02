@@ -1,0 +1,1280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article xmlns:xlink="http://www.w3.org/1999/xlink">
+  <front>
+    <journal-meta/>
+    <article-meta>
+      <title-group>
+        <article-title>Test paper for citation parsing</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <string-name>BIR Workshop</string-name>
+        </contrib>
+      </contrib-group>
+      <abstract>
+        <p>This paper is our test for citation parsing. We need some text here to make it look like a real paper. In this study, we evaluate the performance of CERMINE, a PDF parser designed for extracting scholarly information, particularly citations, from academic documents. The evaluation entails a comprehensive analysis of CERMINE's ability to accurately parse citations across diverse datasets encompassing various disciplines and publication formats. Through systematic testing and comparison with ground truth data, we assess CERMINE's eficacy in recognizing citation patterns, handling variations in citation styles, and extracting metadata such as authors, titles, publication years, and journal names. Additionally, we investigate the parser's robustness in handling complex layouts, non-standard document structures, and citations embedded within tables, figures, and footnotes. Our findings shed light on the strengths and limitations of CERMINE, providing insights into its applicability for automated bibliographic management, citation analysis, and digital library development. The results presented herein contribute to the ongoing eforts in enhancing the accuracy and reliability of PDF parsing tools for scholarly communication and information retrieval.</p>
+      </abstract>
+      <kwd-group>
+        <kwd>Citation parsing</kwd>
+        <kwd>English</kwd>
+        <kwd>Bibliographic References</kwd>
+        <kwd>Bibliometrics</kwd>
+      </kwd-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="sec-1">
+      <title>-</title>
+      <p>science [DAV81; CH22; Loz+16]. Davis’s forward-looking examination of
+bibliometrics in Library Trends sets the stage for understanding its conceptual
+foundations and practical applications [DAV81]. Meanwhile, von Ungern-Sternberg’s
+exploration of "Teaching bibliometrics" highlights the pedagogical dimensions
+of bibliometric literacy and education [US98]. Narin’s seminal work on "Patent
+Bibliometrics" sheds light on the unique challenges and opportunities in
+analyzing patent data, emphasizing the interdisciplinary nature of bibliometric research
+[NAR94]. Together, these contributions underscore the diverse facets of
+bibliometrics and its integral role in scholarly inquiry and knowledge management.
+Moreover, the growing reliance on bibliometric indicators for research
+evaluation and funding allocation has raised concerns about the potential misuse and
+misinterpretation of bibliometric data [US98; Coo15].
+2</p>
+    </sec>
+    <sec id="sec-2">
+      <title>Method</title>
+      <p>In the landscape of bibliometrics, teaching methodologies and introductory
+resources play pivotal roles in shaping scholarly understanding and application.
+Schrader’s exploration of "Teaching Bibliometrics" in Library Trends
+underscores the pedagogical strategies essential for fostering bibliometric literacy and
+competency [SCH81]. Potter’s concise yet informative "Bibliometrics -
+Introduction" provides a foundational framework for newcomers to grasp the
+fundamental concepts and principles of bibliometric analysis [POT81]. Moreover,
+Schubert’s "Handbook Bibliometrics" in Scientometrics serves as a comprehensive
+guide for scholars and practitioners navigating the intricate terrain of
+bibliometric methodologies and applications [Sch21]. Additionally, Benjaminsen et al.’s
+study on "Beyond Bibliometrics" in Political Geography challenges conventional
+perspectives, urging scholars to explore the broader implications and limitations
+of bibliometric approaches in understanding scholarly impact and dissemination
+[Ben+19; Sch09]. These contributions collectively enrich the discourse
+surrounding bibliometrics, ofering insights into its pedagogical, methodological, and
+conceptual dimensions. Moreover, the critical discourse surrounding bibliometrics
+has led to the exploration of alternative metrics and methodologies [KBVZ21;
+The08].</p>
+      <p>In the vast landscape of bibliometrics, the evolution and diversification of
+methodologies and applications have been extensively documented. Lancaster’s
+"Dictionary of Bibliometrics" in the Journal of the American Society for
+Information Science ofers a comprehensive compendium of key terms and concepts
+essential for scholars and practitioners navigating the intricacies of
+bibliometric research [Lan97]. Brookes’ seminal work, "Developments in Bibliometrics,"
+published in the Journal of Information Science, sheds light on the evolving
+trends and paradigms within the field, highlighting its dynamic nature and
+interdisciplinary intersections [BRO85]. Grothkopf and Lagerstrom’s exploration
+of "Telescope Bibliometrics 101" in the proceedings of the "Future Professional
+Communication in Astronomy II" conference underscores the relevance of
+bibliometrics in specialized domains beyond traditional academic disciplines [GL11].
+Moreover, Stephan et al.’s provocative study titled "Blinkered by Bibliometrics"
+in Nature critically examines the limitations and biases inherent in bibliometric
+indicators, prompting scholars to adopt more nuanced approaches to research
+evaluation [SVW17]. These seminal contributions, along with works such as
+Simon’s "Bibliometrics - Potter, WG" [SIM82], Windsor’s "Bibliometrics and
+Drugs" [WIN80], and Cox et al.’s "Competencies for Bibliometrics" [Cox+19;
+Sil+12], collectively enrich the discourse surrounding bibliometrics, reflecting its
+multifaceted nature and enduring significance in scholarly inquiry.</p>
+      <p>In the realm of bibliometrics, diverse perspectives and applications emerge
+from various scholarly inquiries. Brookes’ examination of "Bibliometrics at Luc
+Diepenbeek" in the Journal of Information Science sheds light on the practical
+implementations and implications of bibliometric methodologies within specific
+institutional contexts [MUN81; HHR20; BRO88]. Similarly, Braun’s exploration
+of "Bibliometrics in Research Evaluation" underscores the role of
+bibliometric indicators in informing research assessment and decision-making processes,
+contributing to the broader discourse on scholarly impact [BRA88]. Rossi,
+Strumia, and Torre’s presentation on "Bibliometrics for Collaboration Works" at the
+17th International Conference on Scientometrics and Informetrics delves into the
+collaborative dimensions of bibliometric analysis, highlighting its relevance in
+fostering interdisciplinary research endeavors [RST19]. Moreover, Kurtz’s
+investigation titled "Comparing People with Bibliometrics," presented at the Meeting
+on Library and Information Services in Astronomy VIII, reflects on the nuanced
+interplay between bibliometric metrics and individual scholarly contributions,
+ofering insights into research evaluation practices [Kur18]. These contributions,
+alongside works such as Arsenova’s "New Application of Bibliometrics" [Ars13],
+Manthorpe’s "Bibliometrics in Social Work" [Man07], and Prathap’s
+"Bibliometrics - Problems and Promises" [Pra15; GM20; BF02; Gre22], collectively enrich
+the understanding and utilization of bibliometric methodologies across diverse
+academic domains.
+3</p>
+    </sec>
+    <sec id="sec-3">
+      <title>Results</title>
+      <p>Bibliometrics, as a field of study, encompasses a myriad of dimensions and
+applications that have been explored and articulated over the years [Rou14; Cha+07;
+HC90; GWP15]. Line’s article, "The Importance of Bibliometrics," published
+in the Library Journal, underscores the significance of bibliometric analyses in
+understanding scholarly communication and impact within the library context
+[KUN93; LIN87; Lew20]. Conversely, Broadus delves into the historical
+trajectory of bibliometrics in his work "Early Approaches to Bibliometrics," ofering
+insights into the evolution of methodologies [HHR19] and conceptual frameworks
+within the field [Hun11; BRO87a]. These perspectives converge with Cronin’s
+exploration of "Semiotics and Evaluative Bibliometrics" in the Journal of
+Documentation, which delves into the semiotic underpinnings of bibliometric analysis,
+emphasizing its role in shaping scholarly evaluation practices [Rus+14; Cro00].
+Through such diverse inquiries, the multifaceted nature of bibliometrics emerges
+[McC97], illuminating its complex interplay with scholarly communication,
+research evaluation, and information retrieval processes [PRI69].</p>
+      <p>The evolution of bibliometrics is deeply entrenched in scholarly discourse
+[GWP16], spanning various disciplines and methodologies. Conversely,
+Campos and Redondo’s investigation, "Bibliometrics and Clinical Chemistry," in the
+Clinical Chemistry journal, explores the intersection of bibliometric
+methodologies with clinical research paradigms, shedding light on their applicability within
+the realm of medical science [CR91]. Furthermore, Prathap’s recent contribution,
+"Introduction to Bibliometrics and Scientometrics," in the Annals of Library and
+Information Studies, ofers contemporary insights into the evolving landscape of
+bibliometric practices, highlighting their role in shaping scholarly communication
+and evaluation in the digital age [Pra22]. Lastly, Narin, Olivastro, and Stevens’
+scholarly inquiry, "Bibliometrics Theory, Practice and Problems," published in
+the Evaluation Review, delves into the theoretical underpinnings and practical
+applications of bibliometric analyses, addressing inherent challenges and
+opportunities within the field [NOS94].</p>
+      <p>Daniel’s seminal work, "Bibliometrics and Scholarly Impact," published in
+the American Psychologist, laid foundational insights into the relationship
+between bibliometrics and scholarly influence, underlining their symbiotic nature in
+academic evaluation [Hic16; DAN79]. Zimmer’s article, "Bibliometrics: Simple
+Understandable - Comprehensible," featured in the Zeitschrift fur
+Bibliothekswesen und Bibliographie, advocates for the accessibility and clarity of bibliometric
+analyses, emphasizing their utility across diverse scholarly landscapes [Zim14].
+McLain’s review, "Bibliometrics Toolbox," featured in the Journal of the
+American Society for Information Science, underscores the importance of
+methodological frameworks in bibliometric analyses, providing practitioners with essential
+tools for efective research assessment [MCL90; Bor20; Yil19]. Through these
+diverse perspectives, the multifaceted nature of bibliometrics emerges, reflecting
+its dynamic interplay with scholarly inquiry and evaluation processes [Fri10].</p>
+      <p>Knowledge transfer in urban settings is a multifaceted process influenced by
+various factors, including social dynamics, institutional frameworks, and
+technological advancements [Bur95; Ste+23; BZ18; KK12]. Understanding the
+mechanisms driving knowledge exchange is essential for fostering innovation,
+enhancing urban resilience, and promoting sustainable development [PER90; NTM10].
+However, assessing the efectiveness and eficiency of knowledge transfer
+initiatives remains a complex endeavor, requiring robust analytical frameworks and
+methodologies [KA19; Joh11].</p>
+      <p>Our analysis reveals significant trends and patterns in urban knowledge
+transfer, highlighting the role of interdisciplinary collaboration and information
+dissemination channels [KA19; BG09; KK12]. By mapping the evolution of key
+research themes and identifying influential stakeholders, we elucidate the
+mechanisms driving urban knowledge exchange processes [TG90]. Furthermore, our
+ifndings underscore the importance of open access initiatives and collaborative
+platforms in facilitating knowledge dissemination and promoting innovation in
+urban contexts [Stu17; Bea19].</p>
+    </sec>
+    <sec id="sec-4">
+      <title>Discussion</title>
+      <p>The findings presented in this study shed light on the intricate dynamics of
+knowledge transfer in urban environments. Our analysis underscores the
+multifaceted nature of urban knowledge exchange [God06], which is influenced by a
+myriad of factors, including technological innovations, institutional frameworks,
+and socio-economic dynamics [KB05; BRO87b]. The utilization of
+bibliometric analysis has allowed us to unravel underlying patterns and trends [McC96],
+ofering valuable insights for policymakers, urban planners, and researchers.</p>
+      <p>One key aspect highlighted by our study is the pivotal role of interdisciplinary
+collaboration in driving urban knowledge transfer [Pal19; Rom17; Mea05; PT88].
+The emergence of collaborative networks spanning diverse fields such as urban
+planning, environmental science, and information technology underscores the
+importance of cross-disciplinary engagement in addressing complex urban
+challenges [Atk12; Smi08]. By fostering synergies between diferent disciplines, urban
+stakeholders can harness the collective expertise and resources needed to tackle
+pressing issues such as sustainable development, resilience planning, and social
+inclusion [MT18].</p>
+      <p>Another noteworthy finding is the evolving landscape of knowledge
+dissemination channels in urban contexts [Mop10]. The advent of digital
+technologies and online platforms has transformed the way information is accessed,
+shared, and utilized within urban communities [AIY75; BMA19]. From
+openaccess repositories to social media platforms, the proliferation of digital tools has
+democratized access to knowledge, empowering citizens to actively participate
+in decision-making processes and community development initiatives [Lan18;
+Kli+16].</p>
+      <p>Furthermore, our analysis underscores the importance of open access
+initiatives in democratizing knowledge and fostering innovation [MSB17; PAI89;
+Nie23]. By removing barriers to information access and promoting transparency
+in scholarly communication, open access platforms play a crucial role in
+bridging the gap between academia and practice [LA92]. By embracing principles of
+open science and knowledge sharing, urban stakeholders can leverage the
+collective wisdom of global communities to address local challenges and advance
+sustainable urban development agendas [WHI85; DR23].</p>
+      <p>Overall, the insights generated from our bibliometric analysis ofer valuable
+implications for urban policymakers, practitioners, and researchers. By
+understanding the underlying mechanisms driving urban knowledge transfer,
+stakeholders can design more efective strategies for fostering innovation, enhancing
+resilience [NI11; TR01], and promoting inclusive urban development. Moving
+forward, it is imperative to continue monitoring trends in urban knowledge
+exchange and exploring novel approaches to harness the transformative power of
+knowledge for the collective benefit of urban communities [HAR92].</p>
+    </sec>
+    <sec id="sec-5">
+      <title>Conclusion</title>
+      <p>In conclusion, our bibliometric analysis provides valuable insights into the
+dynamics of knowledge transfer in urban environments. By elucidating the
+patterns of scholarly communication and collaboration, our study contributes to
+the growing body of literature on urban knowledge exchange [GWG14; AR20].
+Moving forward, future research endeavors should explore emerging trends in
+urban knowledge transfer and examine the implications for urban policy,
+governance, and planning.
+[NM77]
+[Kli+16]
+[WM89]
+[Nie23]
+[KB10]
+[DAV81]
+[CH22]
+[Loz+16]
+[US98]
+[NAR94]
+[Coo15]
+[Cox+19]
+[Sil+12]
+[MUN81]
+[HHR20]
+[BRO88]
+[BRA88]
+[RST19]
+[Kur18]
+[Ars13]
+ences. 2nd International Conference on Integrated Information
+(ICININFO), Budapest, HUNGARY, AUG 30-SEP 03, 2012. 2013, pp. 678–
+682. doi: 10.1016/j.sbspro.2013.02.105.</p>
+      <p>Jill Manthorpe. “Bibliometrics in social work”. In: BRITISH
+JOURNAL OF SOCIAL WORK 37.5 (2007), pp. 951–953. issn:
+00453102. doi: 10.1093/bjsw/bcm078.</p>
+      <p>Gangan Prathap. “Bibliometrics - problems and promises”. In:
+CURRENT SCIENCE 108.2 (2015), pp. 147–148. issn: 0011-3891.</p>
+      <p>Jose M. Gonzalez-Meijome. “Journal of Optometry bibliometrics”.</p>
+      <p>In: JOURNAL OF OPTOMETRY 13.2 (2020), pp. 71–73. issn:
+1888-4296. doi: 10.1016/j.optom.2020.03.005.</p>
+      <p>CL Borgman and J Furner. “Scholarly communication and
+bibliometrics”. In: ANNUAL REVIEW OF INFORMATION SCIENCE
+AND TECHNOLOGY 36 (2002), pp. 3–72. issn: 0066-4200.</p>
+      <p>Sue Greener. “Evaluating literature with bibliometrics”. In:
+INTERACTIVE LEARNING ENVIRONMENTS 30.7 (2022), pp. 1168–
+1169. issn: 1049-4820. doi: 10.1080/10494820.2022.2118463.</p>
+      <p>Ronald Rousseau. “Forgotten founder of bibliometrics”. In:
+NATURE 510.7504 (2014), p. 218. issn: 0028-0836. doi: 10 . 1038 /
+510218e.</p>
+      <p>H. Chang et al. “Technology intelligence with bibliometrics”. In:
+IMECS 2007: INTERNATIONAL MULTICONFERENCE OF
+ENGINEERS AND COMPUTER SCIENTISTS, VOLS I AND II.
+Lecture Notes in Engineering and Computer Science. International
+Multiconference of Engineers and Computer Scientists, Kowloon,
+PEOPLES R CHINA, MAR 21-23, 2007. 2007, pp. 796+. isbn:
+978-98898671-4-0.</p>
+      <p>D HICKS and D CROUCH. “CAN BIBLIOMETRICS MEASURE
+UP”. In: PHYSICS WORLD 3.9 (1990), pp. 27–28. issn: 0953-8585.
+doi: 10.1088/2058-7058/3/9/23.</p>
+      <p>Arzu Tugce Guler, Cathelijn J. F. Waaijer, and Magnus Palmblad.
+“Scientific Workflows for Bibliometrics”. In: PROCEEDINGS OF
+ISSI 2015 ISTANBUL: 15TH INTERNATIONAL SOCIETY OF
+SCIENTOMETRICS AND INFORMETRICS CONFERENCE. Ed.
+by AA Salah et al. Proceedings of the International Conference on
+Scientometrics and Informetrics. 15th International Conference of
+the International-Society-for-Scientometrics-and-Informetrics (ISSI)
+on Scientometrics and Informetrics, Bogazici Univ, Istanbul, TURKEY,
+JUN 29-JUL 04, 2015. Int Soc Scientometr &amp; Informetr; Hacettepe
+Univ; Sci &amp; Technol Res Council Turkey, Turkish Acad Network &amp;
+Informat Ctr. 2015, pp. 1029–1034. isbn: 978-975-518-381-7.</p>
+      <p>M KUNZ. “ABOUT METRICS OF BIBLIOMETRICS”. In:
+JOURNAL OF CHEMICAL INFORMATION AND COMPUTER
+SCIENCES 33.2 (1993), pp. 193–196. issn: 0095-2338. doi: 10.1021/
+ci00012a002.
+[Hic16]
+[DAN79]
+[Zim14]
+[MCL90]
+[Bor20]
+[Yil19]
+[Fri10]
+[Bur95]
+[Ste+23]
+[BZ18]
+[KK12]
+[PER90]
+[NTM10]
+TION REVIEW 18.1 (1994), pp. 65–76. issn: 0193-841X. doi: 10.
+1177/0193841X9401800107.</p>
+      <p>Daniel J. Hicks. “Bibliometrics for Social Validation”. In: PLOS
+ONE 11.12 (2016). issn: 1932-6203. doi: 10.1371/journal.pone.
+0168597.</p>
+      <p>RS DANIEL. “BIBLIOMETRICS AND SCHOLARLY IMPACT”.</p>
+      <p>In: AMERICAN PSYCHOLOGIST 34.8 (1979), pp. 725–726. issn:
+0003-066X. doi: 10.1037/0003-066X.34.8.725.</p>
+      <p>David Zimmer. “Bibliometrics: simple - understandable -
+comprehensible”. In: ZEITSCHRIFT FUR BIBLIOTHEKSWESEN UND
+BIBLIOGRAPHIE 61.6 (2014), pp. 388–389. issn: 0044-2380.</p>
+      <p>JP MCLAIN. “BIBLIOMETRICS TOOLBOX - BROOKS,TA”. In:
+JOURNAL OF THE AMERICAN SOCIETY FOR
+INFORMATION SCIENCE 41.1 (1990), pp. 70–71. issn: 0002-8231. doi: 10.
+1002/(SICI)1097-4571(199001)41:1&lt;70::AID-ASI8&gt;3.0.CO;2J.</p>
+      <p>Lutz Bornmann. “Bibliometrics-based decision trees (BBDTs) based
+on bibliometrics-based heuristics (BBHs): Visualized guidelines for
+the use of bibliometrics in research evaluation”. In:
+QUANTITATIVE SCIENCE STUDIES 1.1 (2020), pp. 171–182. doi: 10.1162/
+qss\_a\_00012.</p>
+      <p>Murat Yilmaz. “A Critical View on Bibliometrics”. In: TURKISH
+LIBRARIANSHIP 33.1 (2019), pp. 43–49. issn: 1300-0039. doi:
+10.24146/tkd.2019.47.</p>
+      <p>Errol C. Friedberg. “A closer look at bibliometrics”. In: DNA
+REPAIR 9.10 (2010), pp. 1018–1020. issn: 1568-7864. doi: 10.1016/
+j.dnarep.2010.07.010.</p>
+      <p>Q Burrell. “Dictionary of bibliometrics - Diodato,V”. In: JOURNAL
+OF DOCUMENTATION 51.4 (1995), pp. 448–450. issn: 0022-0418.</p>
+      <p>Christos Stefanis et al. “Terroir in View of Bibliometrics”. In: STATS
+6.4 (2023), pp. 956–979. doi: 10.3390/stats6040060.</p>
+      <p>Kristina Borgoyakova and Andrey Zemskov. “Bibliometrics and
+hunting the predators”. In: NAUCHNYE I TEKHNICHESKIE
+BIBLIOTEKISCIENTIFIC AND TECHNICAL LIBRARIES 2 (2018), pp. 89–
+100. issn: 0130-9765.</p>
+      <p>Judith Kamalski and Andrew Kirby. “Bibliometrics and urban
+knowledge transfer”. In: CITIES 29.2, SI (2012), S3–S8. issn: 0264-2751.
+doi: 10.1016/j.cities.2012.06.012.</p>
+      <p>BC PERITZ. “A BRADFORD DISTRIBUTION FOR
+BIBLIOMETRICS”. In: SCIENTOMETRICS 18.5-6 (1990), pp. 323–329.
+issn: 0138-9130. doi: 10.1007/BF02020148.</p>
+      <p>Anton J. Nederhof, Robert J. W. Tijssen, and Henk F. Moed.
+“Anthony van Raan and bibliometrics”. In: RESEARCH EVALUATION
+19.3, SI (2010), pp. 158–160. issn: 0958-2029. doi: 10.3152/095820210X516560;.
+[KA19] Abdalsamad Keramatfar and Hossein Amirkhani. “Bibliometrics of
+sentiment analysis literature”. In: JOURNAL OF INFORMATION
+SCIENCE 45.1 (2019), pp. 3–15. issn: 0165-5515. doi: 10.1177/
+0165551518761013.
+[Joh11] Ian M. Johnson. “Bibliometrics and the brain dead”. In:
+INFORMATION DEVELOPMENT 27.2 (2011), pp. 92–93. issn: 0266-6669.</p>
+      <p>doi: 10.1177/0266666911404012.
+[BG09] Peter Brimblecombe and Carlota M. Grossi. “The bibliometrics of
+atmospheric environment”. In: ATMOSPHERIC ENVIRONMENT
+43.1 (2009), pp. 9–12. issn: 1352-2310. doi: 10.1016/j.atmosenv.</p>
+      <p>2008.09.037.
+[TG90] R TODOROV and W GLAENZEL. “COMPUTER
+BIBLIOMETRICS FOR JOURNAL CLASSIFICATION”. In: INFORMATION
+PROCESSING &amp; MANAGEMENT 26.5 (1990). COLLOQUIUM
+ON EVALUATION AND DOCUMENTARY INFORMATION
+SYSTEMS, UNIV BORDEAUX III, BORDEAUX, FRANCE, NOV
+24-25, 1988, pp. 673–680. issn: 0306-4573. doi: 10 . 1016 / 0306
+4573(90)90109-F.
+[Stu17] David Stuart. “Data bibliometrics: metrics before norms”. In:
+ONLINE INFORMATION REVIEW 41.3 (2017), pp. 428–435. issn:
+1468-4527. doi: 10.1108/OIR-01-2017-0008.
+[Bea19] Philippe Beaufils. “Bibliometrics. Why talk about that?” In:
+ORTHOPAEDICS &amp; TRAUMATOLOGY-SURGERY &amp; RESEARCH
+105.8 (2019), pp. 1423–1424. issn: 1877-0568. doi: 10 . 1016 / j .</p>
+      <p>ostr.2019.10.001.
+[God06] Benoit Godin. “On the origins of bibliometrics”. In:
+SCIENTOMETRICS 68.1 (2006), pp. 109–133. issn: 0138-9130. doi: 10 . 1007 /
+s11192-006-0086-0.
+[KB05] WC Klein and M Bloom. “Bibliometrics: The best available
+information?” In: SOCIAL WORK IN HEALTH CARE 41.3-4 (2005),
+pp. 117–121. issn: 0098-1389. doi: 10.1300/J010v41n03\_07.
+[BRO87b] RN BROADUS. “TOWARD A DEFINITION OF
+BIBLIOMETRICS”. In: SCIENTOMETRICS 12.5-6 (1987), pp. 373–379. issn:
+0138-9130. doi: 10.1007/BF02016680.
+[McC96] KW McCain. “Dictionary of bibliometrics - Diodato,V”. In:
+JOURNAL OF THE AMERICAN SOCIETY FOR INFORMATION
+SCIENCE 47.9 (1996), pp. 716–717. issn: 0002-8231. doi: 10.1002/
+(SICI)1097-4571(199609)47:9&lt;716::AID-ASI8&gt;3.0.CO;2-V.
+[Pal19] George Pallis. “A Look at the Bibliometrics”. In: IEEE INTERNET
+COMPUTING 23.4 (2019), pp. 5–7. issn: 1089-7801. doi: 10.1109/</p>
+      <p>MIC.2019.2931020.
+[Rom17] Richard Romancini. “Bibliometrics in (and beyond) research
+evaluation”. In: EM QUESTAO 23.3 (2017), pp. 300–305. issn: 1807-8893.</p>
+      <p>doi: 10.19132/1808-5245233.300-305.
+[Mea05]
+[PT88]
+[Atk12]
+[Smi08]
+[MT18]
+[Mop10]
+[AIY75]
+[BMA19]
+[Lan18]
+[MSB17]
+[PAI89]
+[LA92]
+J Meadows. “A practical line in bibliometrics”. In: INTERLENDING
+&amp; DOCUMENT SUPPLY 33.2 (2005), pp. 90–94. issn: 0264-1615.
+doi: 10.1108/02641050602628.</p>
+      <p>DC PHILLIPS and J TURNEY. “BIBLIOMETRICS AND UK
+SCIENCE POLICY”. In: SCIENTOMETRICS 14.3-4 (1988), pp. 185–
+200. issn: 0138-9130. doi: 10.1007/BF02020074.</p>
+      <p>Roger Atkinson. “Editorial 28(2) Bibliometrics revisited”. In:
+AUSTRALASIAN JOURNAL OF EDUCATIONAL TECHNOLOGY 28.2
+(2012), pp. III–V. issn: 1449-3098.</p>
+      <p>Derek R. Smith. “Bibliometrics, dermatology and contact
+dermatitis”. In: CONTACT DERMATITIS 59.3 (2008), pp. 133–136. issn:
+0105-1873. doi: 10.1111/j.1600-0536.2008.01405.x.</p>
+      <p>Yulia Mokhnacheva and Valentina Tsvetkova. “Bibliometrics and
+modern scientific libraries”. In: NAUCHNYE I TEKHNICHESKIE
+BIBLIOTEKI-SCIENTIFIC AND TECHNICAL LIBRARIES 6 (2018),
+pp. 51–62. issn: 0130-9765.</p>
+      <p>I. K. Moppett. “Individual bibliometrics in UK anaesthesia”. In:
+BRITISH JOURNAL OF ANAESTHESIA 105.5 (2010). Annual
+Meeting of the Anaesthetic-Research-Society, Univ Nottingham,
+Nottingham, ENGLAND, JUL 01-02, 2010, pp. 721–722. issn:
+00070912.</p>
+      <p>WO AIYEPEKU. “BIBLIOMETRICS IN INFORMATION-SCIENCE
+CURRICULA”. In: INFORMATION SCIENTIST 9.1 (1975), pp. 29–
+34.</p>
+      <p>Lutz Bornmann and Felix de Moya-Anegon. “Spatial
+bibliometrics on the city level”. In: JOURNAL OF INFORMATION
+SCIENCE 45.3 (2019), pp. 416–425. issn: 0165-5515. doi: 10.1177/
+0165551518806119.</p>
+      <p>Marc Langheinrich. “Bibliometrics-Measuring &lt;i&gt;Pervasive&lt;/i&gt; &lt;i&gt;Computing’s&lt;/i&gt;
+Impact”. In: IEEE PERVASIVE COMPUTING 17.3 (2018), pp. 6–
+9. issn: 1536-1268. doi: 10.1109/MPRV.2018.03367729.</p>
+      <p>Melissa McEnery-Stonelake and Jefrey D. Bernhard. “THE
+BIBLIOMETRICS OF ITCH: 2017 UPDATE”. In: ACTA
+DERMATOVENEREOLOGICA 97.8 (2017), p. 1051. issn: 0001-5555.</p>
+      <p>W PAISLEY. “BIBLIOMETRICS, SCHOLARLY
+COMMUNICATION, AND COMMUNICATION-RESEARCH”. In:
+COMMUNICATION RESEARCH 16.5 (1989), pp. 701–717. issn: 0093-6502.
+doi: 10.1177/009365089016005010.</p>
+      <p>FW LANCASTER and SB ABDULLAH. “SCIENCE AND
+POLITICS - SOME BIBLIOMETRICS ANALYSIS”. In: SCIENCE
+INDICATORS FOR DEVELOPING COUNTRIES. Ed. by R
+Arvanitis and J Gaillard. COLLOQUES ET SEMINAIRES. International
+Conference on Science Indicators for Developing Countries,
+UNESCO, PARIS, FRANCE, OCT 15-19, 1990. 1992, pp. 319–331.</p>
+      <p>isbn: 2-7099-1082-9.</p>
+    </sec>
+  </body>
+  <back>
+    <ref-list>
+      <ref id="ref1">
+        <mixed-citation>
+          <article-title>[SCH81] AM SCHRADER. “TEACHING BIBLIOMETRICS”</article-title>
+          .
+          <source>In: LIBRARY TRENDS 30.1</source>
+          (
+          <issue>1981</issue>
+          ), pp.
+          <fpage>151</fpage>
+          -
+          <lpage>159</lpage>
+          . issn:
+          <fpage>0024</fpage>
+          -
+          <lpage>2594</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref2">
+        <mixed-citation>
+          <article-title>[POT81] WG POTTER. “BIBLIOMETRICS - INTRODUCTION”</article-title>
+          .
+          <source>In: LIBRARY TRENDS 30.1</source>
+          (
+          <issue>1981</issue>
+          ), pp.
+          <fpage>5</fpage>
+          -
+          <lpage>7</lpage>
+          . issn:
+          <fpage>0024</fpage>
+          -
+          <lpage>2594</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref3">
+        <mixed-citation>
+          [Sch21]
+          <article-title>Andras Schubert. “Handbook Bibliometrics”</article-title>
+          .
+          <source>In: SCIENTOMETRICS 126.6</source>
+          (
+          <issue>2021</issue>
+          ), pp.
+          <fpage>5379</fpage>
+          -
+          <lpage>5385</lpage>
+          . issn:
+          <fpage>0138</fpage>
+          -
+          <lpage>9130</lpage>
+          . doi:
+          <volume>10</volume>
+          .1007/ s11192-021-03975-2.
+        </mixed-citation>
+      </ref>
+      <ref id="ref4">
+        <mixed-citation>
+          [Ben+19]
+          <string-name>
+            <surname>Tor</surname>
+            <given-names>A.</given-names>
+          </string-name>
+          <string-name>
+            <surname>Benjaminsen</surname>
+          </string-name>
+          et al. “
+          <article-title>Beyond bibliometrics”</article-title>
+          .
+          <source>In: POLITICAL GEOGRAPHY 68</source>
+          (
+          <year>2019</year>
+          ),
+          <fpage>A1</fpage>
+          -
+          <lpage>A2</lpage>
+          . issn:
+          <fpage>0962</fpage>
+          -
+          <lpage>6298</lpage>
+          . doi:
+          <volume>10</volume>
+          .1016/ j.polgeo.
+          <year>2018</year>
+          .
+          <volume>12</volume>
+          .004.
+        </mixed-citation>
+      </ref>
+      <ref id="ref5">
+        <mixed-citation>
+          [Sch09]
+          <string-name>
+            <surname>Gilles-Maurice de Schryver</surname>
+          </string-name>
+          . “
+          <article-title>Bibliometrics in Lexicography”</article-title>
+          .
+          <source>In: INTERNATIONAL JOURNAL OF LEXICOGRAPHY 22.4</source>
+          (
+          <issue>2009</issue>
+          ), pp.
+          <fpage>423</fpage>
+          -
+          <lpage>465</lpage>
+          . issn:
+          <fpage>0950</fpage>
+          -
+          <lpage>3846</lpage>
+          . doi:
+          <volume>10</volume>
+          .1093/ijl/ecp027.
+        </mixed-citation>
+      </ref>
+      <ref id="ref6">
+        <mixed-citation>
+          [KBVZ21]
+          <string-name>
+            <given-names>Peter</given-names>
+            <surname>Kokol</surname>
+          </string-name>
+          , Helena Blazun Vosner, and Jernej Zavrsnik. “
+          <article-title>Application of bibliometrics in medicine: a historical bibliometrics analysis”</article-title>
+          .
+          <source>In: HEALTH INFORMATION AND LIBRARIES JOURNAL 38.2</source>
+          (
+          <issue>2021</issue>
+          ), pp.
+          <fpage>125</fpage>
+          -
+          <lpage>138</lpage>
+          . issn:
+          <fpage>1471</fpage>
+          -
+          <lpage>1834</lpage>
+          . doi:
+          <volume>10</volume>
+          .1111/hir.12295.
+        </mixed-citation>
+      </ref>
+      <ref id="ref7">
+        <mixed-citation>
+          [The08]
+          <string-name>
+            <given-names>Mike</given-names>
+            <surname>Thelwall</surname>
+          </string-name>
+          . “Bibliometrics to webometrics”.
+          <source>In: JOURNAL OF INFORMATION SCIENCE 34.4</source>
+          (
+          <issue>2008</issue>
+          ), pp.
+          <fpage>605</fpage>
+          -
+          <lpage>621</lpage>
+          . issn:
+          <fpage>0165</fpage>
+          -
+          <lpage>5515</lpage>
+          . doi:
+          <volume>10</volume>
+          .1177/0165551507087238.
+        </mixed-citation>
+      </ref>
+      <ref id="ref8">
+        <mixed-citation>
+          <article-title>[Lan97] FW Lancaster. “Dictionary of bibliometrics”</article-title>
+          .
+          <source>In: JOURNAL OF THE AMERICAN SOCIETY FOR INFORMATION SCIENCE 48.5</source>
+          (
+          <issue>1997</issue>
+          ), p.
+          <fpage>480</fpage>
+          . issn:
+          <fpage>0002</fpage>
+          -
+          <lpage>8231</lpage>
+          . doi:
+          <volume>10</volume>
+          .1002/(SICI)
+          <fpage>1097</fpage>
+          -
+          <lpage>4571</lpage>
+          (
+          <issue>199705</issue>
+          ) 48:
+          <fpage>5</fpage>
+          &lt;
+          <fpage>480</fpage>
+          :
+          <article-title>:AID-ASI18&gt;3.0</article-title>
+          .CO;
+          <fpage>2</fpage>
+          -
+          <lpage>2</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref9">
+        <mixed-citation>
+          <article-title>[BRO85] BC BROOKES. “DEVELOPMENTS IN BIBLIOMETRICS”</article-title>
+          .
+          <source>In: JOURNAL OF INFORMATION SCIENCE 10.2</source>
+          (
+          <issue>1985</issue>
+          ), pp.
+          <fpage>91</fpage>
+          -
+          <lpage>92</lpage>
+          . issn:
+          <fpage>0165</fpage>
+          -
+          <lpage>5515</lpage>
+          . doi:
+          <volume>10</volume>
+          .1177/016555158501000206.
+        </mixed-citation>
+      </ref>
+      <ref id="ref10">
+        <mixed-citation>
+          <source>[GL11] Uta Grothkopf and Jill Lagerstrom. “Telescope Bibliometrics</source>
+          <volume>101</volume>
+          ”. In:
+          <article-title>FUTURE PROFESSIONAL COMMUNICATION IN ASTRONOMY II</article-title>
+          . Ed. by
+          <string-name>
+            <given-names>A</given-names>
+            <surname>Accomazzi</surname>
+          </string-name>
+          .
+          <source>Astrophysics and Space Science Proceedings. 2nd Colloquium on Future Professional Communication in Astronomy (FPCA II)</source>
+          ,
+          <string-name>
+            <surname>Harvard-Smithsonian Ctr</surname>
+            <given-names>Astrophys</given-names>
+          </string-name>
+          , Cambridge, MA, APR
+          <volume>13</volume>
+          -
+          <issue>14</issue>
+          ,
+          <year>2010</year>
+          . Smithsonian Astrophys Observatory;
+          <source>Amer Astronom Soc; EDP Sci; Wiley-Blackwell; IOP Publish</source>
+          ; Springer; Elsevier.
+          <year>2011</year>
+          , pp.
+          <volume>109</volume>
+          +. isbn:
+          <fpage>978</fpage>
+          -1-
+          <fpage>4419</fpage>
+          -8368-8. doi:
+          <volume>10</volume>
+          .1007/978-1-
+          <fpage>4419</fpage>
+          -8369-5\_
+          <fpage>12</fpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref11">
+        <mixed-citation>
+          [SVW17]
+          <string-name>
+            <given-names>Paula</given-names>
+            <surname>Stephan</surname>
+          </string-name>
+          , Reinhilde Veugelers, and
+          <string-name>
+            <given-names>Jian</given-names>
+            <surname>Wang</surname>
+          </string-name>
+          . “
+          <article-title>Blinkered by bibliometrics”</article-title>
+          .
+          <source>In: NATURE 544.7651</source>
+          (
+          <year>2017</year>
+          ), pp.
+          <volume>411</volume>
+          +. issn:
+          <fpage>0028</fpage>
+          -
+          <lpage>0836</lpage>
+          . doi:
+          <volume>10</volume>
+          .1038/544411a.
+        </mixed-citation>
+      </ref>
+      <ref id="ref12">
+        <mixed-citation>
+          <article-title>[SIM82] HR SIMON. “BIBLIOMETRICS - POTTER,WG”</article-title>
+          .
+          <source>In: NACHRICHTEN FUR DOKUMENTATION 33.6</source>
+          (
+          <issue>1982</issue>
+          ), pp.
+          <fpage>257</fpage>
+          -
+          <lpage>258</lpage>
+          . issn:
+          <fpage>0027</fpage>
+          -
+          <lpage>7436</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref13">
+        <mixed-citation>
+          <article-title>[WIN80] DA WINDSOR. “BIBLIOMETRICS AND DRUGS”</article-title>
+          .
+          <source>In: JOURNAL OF CHEMICAL INFORMATION AND COMPUTER SCIENCES 20.4</source>
+          (
+          <issue>1980</issue>
+          ), p.
+          <fpage>255</fpage>
+          . issn:
+          <fpage>0095</fpage>
+          -
+          <lpage>2338</lpage>
+          . doi:
+          <volume>10</volume>
+          .1021/ci60024a600.
+        </mixed-citation>
+      </ref>
+      <ref id="ref14">
+        <mixed-citation>
+          <article-title>[LIN87] MB LINE. “THE IMPORTANCE OF BIBLIOMETRICS”</article-title>
+          .
+          <source>In: LIBRARY JOURNAL 112.18</source>
+          (
+          <year>1987</year>
+          ), p.
+          <fpage>10</fpage>
+          . issn:
+          <fpage>0363</fpage>
+          -
+          <lpage>0277</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref15">
+        <mixed-citation>
+          [Lew20]
+          <article-title>Grant Lewison. “Preparation of bibliometrics papers”</article-title>
+          .
+          <source>In: ANAIS DA ACADEMIA BRASILEIRA DE CIENCIAS 92.3</source>
+          (
+          <year>2020</year>
+          ). issn:
+          <fpage>0001</fpage>
+          -
+          <lpage>3765</lpage>
+          . doi:
+          <volume>10</volume>
+          .1590/
+          <fpage>0001</fpage>
+          -
+          <lpage>3765202020201327</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref16">
+        <mixed-citation>
+          [HHR19]
+          <string-name>
+            <given-names>Eva</given-names>
+            <surname>Heinrich</surname>
+          </string-name>
+          ,
+          <string-name>
+            <given-names>Michael</given-names>
+            <surname>Henderson</surname>
+          </string-name>
+          , and Petrea Redmond. “
+          <article-title>AJET bibliometrics and licensing”</article-title>
+          .
+          <source>In: AUSTRALASIAN JOURNAL OF EDUCATIONAL TECHNOLOGY 35.1</source>
+          (
+          <issue>2019</issue>
+          ), pp.
+          <article-title>I-IV</article-title>
+          . issn:
+          <fpage>1449</fpage>
+          -
+          <lpage>3098</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref17">
+        <mixed-citation>
+          <string-name>
+            <surname>[Hun11] Glenn</surname>
+            <given-names>E. Hunt.</given-names>
+          </string-name>
+          “
+          <article-title>Making sense of bibliometrics”</article-title>
+          .
+          <source>In: ACTA NEUROPSYCHIATRICA 23.2</source>
+          (
+          <issue>2011</issue>
+          ), pp.
+          <fpage>80</fpage>
+          -
+          <lpage>81</lpage>
+          . issn:
+          <fpage>0924</fpage>
+          -
+          <lpage>2708</lpage>
+          . doi:
+          <volume>10</volume>
+          .1111/j.1601-
+          <fpage>5215</fpage>
+          .
+          <year>2011</year>
+          .
+          <volume>00534</volume>
+          .x.
+        </mixed-citation>
+      </ref>
+      <ref id="ref18">
+        <mixed-citation>
+          <article-title>[BRO87a] RN BROADUS. “EARLY APPROACHES TO BIBLIOMETRICS”</article-title>
+          .
+          <source>In: JOURNAL OF THE AMERICAN SOCIETY FOR INFORMATION SCIENCE 38.2</source>
+          (
+          <issue>1987</issue>
+          ), pp.
+          <fpage>127</fpage>
+          -
+          <lpage>129</lpage>
+          . issn:
+          <fpage>0002</fpage>
+          -
+          <lpage>8231</lpage>
+          . doi:
+          <volume>10</volume>
+          .1002/(SICI)
+          <fpage>1097</fpage>
+          -
+          <lpage>4571</lpage>
+          (
+          <issue>198703</issue>
+          )38:
+          <fpage>2</fpage>
+          &lt;
+          <fpage>127</fpage>
+          :
+          <article-title>:AID-ASI6&gt;3.0</article-title>
+          . CO;2
+          <article-title>-</article-title>
+          K.
+        </mixed-citation>
+      </ref>
+      <ref id="ref19">
+        <mixed-citation>
+          [Rus+14]
+          <string-name>
+            <surname>Jane</surname>
+            <given-names>M.</given-names>
+          </string-name>
+          <string-name>
+            <surname>Russell</surname>
+          </string-name>
+          et al. “
+          <source>International Seminar on Bibliometrics”. In: TRANSINFORMACAO 26.3</source>
+          (
+          <issue>2014</issue>
+          ), pp.
+          <fpage>227</fpage>
+          -
+          <lpage>228</lpage>
+          . issn:
+          <fpage>0103</fpage>
+          -
+          <lpage>3786</lpage>
+          . doi:
+          <volume>10</volume>
+          .1590/
+          <fpage>0103</fpage>
+          -
+          <lpage>3786201400030001a</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref20">
+        <mixed-citation>
+          [Cro00]
+          <string-name>
+            <given-names>B</given-names>
+            <surname>Cronin</surname>
+          </string-name>
+          .
+          <article-title>“Semiotics and evaluative bibliometrics”</article-title>
+          .
+          <source>In: JOURNAL OF DOCUMENTATION 56.4</source>
+          (
+          <issue>2000</issue>
+          ), pp.
+          <fpage>440</fpage>
+          -
+          <lpage>453</lpage>
+          . issn:
+          <fpage>0022</fpage>
+          -
+          <lpage>0418</lpage>
+          . doi:
+          <volume>10</volume>
+          .1108/EUM0000000007123.
+        </mixed-citation>
+      </ref>
+      <ref id="ref21">
+        <mixed-citation>
+          <article-title>[McC97] KW McCain. “Dictionary of bibliometrics - Response”</article-title>
+          .
+          <source>In: JOURNAL OF THE AMERICAN SOCIETY FOR INFORMATION SCIENCE 48.5</source>
+          (
+          <issue>1997</issue>
+          ), pp.
+          <fpage>480</fpage>
+          -
+          <lpage>481</lpage>
+          . issn:
+          <fpage>0002</fpage>
+          -
+          <lpage>8231</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref22">
+        <mixed-citation>
+          [PRI69]
+          <string-name>
+            <given-names>A</given-names>
+            <surname>PRITCHARD. “STATISTICAL BIBLIOGRAPHY OR BIBLIOMETRICS</surname>
+          </string-name>
+          <article-title>”</article-title>
+          .
+          <source>In: JOURNAL OF DOCUMENTATION 25.4</source>
+          (
+          <issue>1969</issue>
+          ), pp.
+          <volume>348</volume>
+          +. issn:
+          <fpage>0022</fpage>
+          -
+          <lpage>0418</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref23">
+        <mixed-citation>
+          <string-name>
+            <surname>[GWP16] Arzu Tugce</surname>
+            <given-names>Guler</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <given-names>Cathelijn J. F.</given-names>
+            <surname>Waaijer</surname>
+          </string-name>
+          , and Magnus Palmblad. “
+          <article-title>Scientific workflows for bibliometrics”</article-title>
+          .
+          <source>In: SCIENTOMETRICS 107.2</source>
+          (
+          <year>2016</year>
+          ).
+          <article-title>15th International Conference of the InternationalSociety-for-Scientometrics-and-</article-title>
+          <string-name>
+            <surname>Informetrics</surname>
+          </string-name>
+          (
+          <article-title>ISSI) on Scientometrics and Informetrics</article-title>
+          , Bogazici Univ, Istanbul, TURKEY,
+          <source>JUN 29- JUL 04</source>
+          ,
+          <year>2015</year>
+          , pp.
+          <fpage>385</fpage>
+          -
+          <lpage>398</lpage>
+          . issn:
+          <fpage>0138</fpage>
+          -
+          <lpage>9130</lpage>
+          . doi:
+          <volume>10</volume>
+          .1007/s11192- 016-1885-6.
+        </mixed-citation>
+      </ref>
+      <ref id="ref24">
+        <mixed-citation>
+          [CR91]
+          <article-title>C CAMPOS and</article-title>
+          FL REDONDO.
+          <article-title>“BIBLIOMETRICS AND CLINICALCHEMISTRY”</article-title>
+          .
+          <source>In: CLINICAL CHEMISTRY 37.2</source>
+          (
+          <issue>1991</issue>
+          ), pp.
+          <fpage>303</fpage>
+          -
+          <lpage>304</lpage>
+          . issn:
+          <fpage>0009</fpage>
+          -
+          <lpage>9147</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref25">
+        <mixed-citation>
+          [Pra22]
+          <string-name>
+            <given-names>Gangan</given-names>
+            <surname>Prathap</surname>
+          </string-name>
+          . “
+          <article-title>Introduction to Bibliometrics and Scientometrics”</article-title>
+          .
+          <source>In: ANNALS OF LIBRARY AND INFORMATION STUDIES 69.4</source>
+          (
+          <issue>2022</issue>
+          ), p.
+          <fpage>327</fpage>
+          . issn:
+          <fpage>0972</fpage>
+          -
+          <lpage>5423</lpage>
+          . doi:
+          <volume>10</volume>
+          . 56042 / alis . v69i4.
+          <fpage>69731</fpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref26">
+        <mixed-citation>
+          <string-name>
+            <surname>[NOS94] F NARIN</surname>
+            ,
+            <given-names>D</given-names>
+          </string-name>
+          <string-name>
+            <surname>OLIVASTRO</surname>
+          </string-name>
+          , and KA STEVENS.
+          <article-title>“BIBLIOMETRICS THEORY, PRACTICE AND PROBLEMS”</article-title>
+          . In: EVALUA[NI11]
+          <article-title>[TR01] [HAR92] [GWG14] [AR20] EC WHITE. “BIBLIOMETRICS - FROM CURIOSITY TO CONVENTION”</article-title>
+          .
+          <source>In: SPECIAL LIBRARIES 76.1</source>
+          (
+          <issue>1985</issue>
+          ), pp.
+          <fpage>35</fpage>
+          -
+          <lpage>42</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref27">
+        <mixed-citation>
+          issn:
+          <fpage>0038</fpage>
+          -
+          <lpage>6723</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref28">
+        <mixed-citation>
+          <string-name>
+            <given-names>Grgo</given-names>
+            <surname>Dzelalija</surname>
+          </string-name>
+          and
+          <string-name>
+            <given-names>Miodrag</given-names>
+            <surname>Roic</surname>
+          </string-name>
+          . “Bibliometrics on Public Utilities Registration Research”.
+          <source>In: LAND 12.5</source>
+          (
+          <year>2023</year>
+          ). doi:
+          <volume>10</volume>
+          .3390/ land12051097.
+        </mixed-citation>
+      </ref>
+      <ref id="ref29">
+        <mixed-citation>
+          <string-name>
+            <given-names>Joerg</given-names>
+            <surname>Neufeld</surname>
+          </string-name>
+          and
+          <article-title>Markus von Ins. “Informed peer review and uninformed bibliometrics?”</article-title>
+          <source>In: RESEARCH EVALUATION 20.1</source>
+          ,
+          <string-name>
+            <surname>SI</surname>
+          </string-name>
+          (
+          <year>2011</year>
+          ), pp.
+          <fpage>31</fpage>
+          -
+          <lpage>46</lpage>
+          . issn:
+          <fpage>0958</fpage>
+          -
+          <lpage>2029</lpage>
+          . doi:
+          <volume>10</volume>
+          .3152/095820211X12941371876382.
+        </mixed-citation>
+      </ref>
+      <ref id="ref30">
+        <mixed-citation>
+          <string-name>
+            <given-names>M</given-names>
+            <surname>Traynor and AM Raferty</surname>
+          </string-name>
+          .
+          <article-title>“Bibliometrics and a culture of measurement”</article-title>
+          .
+          <source>In: JOURNAL OF ADVANCED NURSING 36.2</source>
+          (
+          <issue>2001</issue>
+          ), pp.
+          <fpage>167</fpage>
+          -
+          <lpage>168</lpage>
+          . issn:
+          <fpage>0309</fpage>
+          -
+          <lpage>2402</lpage>
+          . doi:
+          <volume>10</volume>
+          .1046/j.1365-
+          <fpage>2648</fpage>
+          .
+          <year>2001</year>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref31">
+        <mixed-citation>02017.x.</mixed-citation>
+      </ref>
+      <ref id="ref32">
+        <mixed-citation>
+          SP HARTER.
+          <article-title>“SCHOLARLY COMMUNICATION AND BIBLIOMETRICS - BORGMAN,CL”</article-title>
+          .
+          <source>In: JOURNAL OF DOCUMENTATION 48.3</source>
+          (
+          <issue>1992</issue>
+          ), pp.
+          <fpage>333</fpage>
+          -
+          <lpage>336</lpage>
+          . issn:
+          <fpage>0022</fpage>
+          -
+          <lpage>0418</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref33">
+        <mixed-citation>
+          <string-name>
+            <given-names>Christian</given-names>
+            <surname>Gumpenberger</surname>
+          </string-name>
+          ,
+          <string-name>
+            <given-names>Martin</given-names>
+            <surname>Wieland</surname>
+          </string-name>
+          , and Juan Gorraiz. “
+          <article-title>Bibliometrics and Libraries - a promising Liaison”</article-title>
+          .
+          <source>In: ZEITSCHRIFT FUR BIBLIOTHEKSWESEN UND BIBLIOGRAPHIE 61</source>
+          .4-
+          <fpage>5</fpage>
+          (
+          <year>2014</year>
+          ), pp.
+          <fpage>247</fpage>
+          -
+          <lpage>250</lpage>
+          . issn:
+          <fpage>0044</fpage>
+          -
+          <lpage>2380</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref34">
+        <mixed-citation>
+          <string-name>
+            <given-names>Ruben</given-names>
+            <surname>Urbizagastegui</surname>
+          </string-name>
+          Alvarado and Cristina RestrepoArango. “
+          <article-title>Brazilian bibliometrics: difusion of its literature”</article-title>
+          .
+          <source>In: REVISTA IBEROAMERICANA DE CIENCIA DA INFORMACAO 13.1</source>
+          (
+          <issue>2020</issue>
+          ), pp.
+          <fpage>200</fpage>
+          -
+          <lpage>222</lpage>
+          . issn:
+          <fpage>1983</fpage>
+          -
+          <lpage>5213</lpage>
+          . doi:
+          <volume>10</volume>
+          .26512/rici.v13.
+          <year>n1</year>
+          .
+          <year>2020</year>
+          .
+          <volume>27922</volume>
+          .
+        </mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

@@ -1,0 +1,2651 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article xmlns:xlink="http://www.w3.org/1999/xlink">
+  <front>
+    <journal-meta />
+    <article-meta>
+      <title-group>
+        <article-title>Test paper for citation parsing</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <string-name>BIR Workshop</string-name>
+        </contrib>
+      </contrib-group>
+      <abstract>
+        <p>This paper is our test for citation parsing. We need some text here to make it look like a real paper. In this study, we evaluate the performance of CERMINE, a PDF parser designed for extracting scholarly information, particularly citations, from academic documents. The evaluation entails a comprehensive analysis of CERMINE's ability to accurately parse citations across diverse datasets encompassing various disciplines and publication formats. Through systematic testing and comparison with ground truth data, we assess CERMINE's eficacy in recognizing citation patterns, handling variations in citation styles, and extracting metadata such as authors, titles, publication years, and journal names. Additionally, we investigate the parser's robustness in handling complex layouts, non-standard document structures, and citations embedded within tables, figures, and footnotes. Our findings shed light on the strengths and limitations of CERMINE, providing insights into its applicability for automated bibliographic management, citation analysis, and digital library development. The results presented herein contribute to the ongoing eforts in enhancing the accuracy and reliability of PDF parsing tools for scholarly communication and information retrieval.</p>
+      </abstract>
+      <kwd-group>
+        <kwd>Citation parsing</kwd>
+        <kwd>English</kwd>
+        <kwd>Bibliographic References</kwd>
+        <kwd>Bibliometrics</kwd>
+      </kwd-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="sec-1">
+      <title>-</title>
+      <p>
+        Bibliometrics, as a field of study, has witnessed significant growth and
+development over the past few decades, emerging as a vital tool for understanding
+scholarly communication, scientific progress, and knowledge dissemination [
+        <xref ref-type="bibr" rid="ref1 ref2 ref3">1–3</xref>
+        ].
+Initially conceived as a quantitative approach to analyzing bibliographic data,
+bibliometrics has evolved into a multidimensional discipline encompassing
+various quantitative and qualitative analyses [
+        <xref ref-type="bibr" rid="ref1 ref2 ref3">1–3</xref>
+        ].
+      </p>
+      <p>
+        In recent years, bibliometrics has gained prominence in various academic
+disciplines, including neuroscience [
+        <xref ref-type="bibr" rid="ref2">2</xref>
+        ], medicine [
+        <xref ref-type="bibr" rid="ref4">4</xref>
+        ], and information science [
+        <xref ref-type="bibr" rid="ref5">5</xref>
+        ]. The
+comprehensive review by Kurtz and Bollen [
+        <xref ref-type="bibr" rid="ref5">5</xref>
+        ] in the Annual Review of
+Information Science and Technology highlights the diverse applications of bibliometrics
+in research evaluation, scholarly communication, and knowledge discovery.
+      </p>
+      <p>
+        The discourse surrounding bibliometrics has been multifaceted and dynamic,
+reflecting the evolving landscape of scholarly communication and information
+science [
+        <xref ref-type="bibr" rid="ref6 ref7 ref8">6–8</xref>
+        ]. Davis’s forward-looking examination of bibliometrics in Library
+      </p>
+      <p>
+        Trends sets the stage for understanding its conceptual foundations and
+practical applications [
+        <xref ref-type="bibr" rid="ref6">6</xref>
+        ]. Meanwhile, von Ungern-Sternberg’s exploration of
+"Teaching bibliometrics" highlights the pedagogical dimensions of bibliometric literacy
+and education [
+        <xref ref-type="bibr" rid="ref9">9</xref>
+        ]. Narin’s seminal work on "Patent Bibliometrics" sheds light on
+the unique challenges and opportunities in analyzing patent data, emphasizing
+the interdisciplinary nature of bibliometric research [
+        <xref ref-type="bibr" rid="ref10">10</xref>
+        ]. Together, these
+contributions underscore the diverse facets of bibliometrics and its integral role in
+scholarly inquiry and knowledge management. Moreover, the growing reliance on
+bibliometric indicators for research evaluation and funding allocation has raised
+concerns about the potential misuse and misinterpretation of bibliometric data
+[
+        <xref ref-type="bibr" rid="ref11 ref9">9, 11</xref>
+        ].
+2
+      </p>
+    </sec>
+    <sec id="sec-2">
+      <title>Method</title>
+      <p>
+        In the landscape of bibliometrics, teaching methodologies and introductory
+resources play pivotal roles in shaping scholarly understanding and application.
+Schrader’s exploration of "Teaching Bibliometrics" in Library Trends
+underscores the pedagogical strategies essential for fostering bibliometric literacy and
+competency [
+        <xref ref-type="bibr" rid="ref12">12</xref>
+        ]. Potter’s concise yet informative "Bibliometrics - Introduction"
+provides a foundational framework for newcomers to grasp the fundamental
+concepts and principles of bibliometric analysis [
+        <xref ref-type="bibr" rid="ref13">13</xref>
+        ]. Moreover, Schubert’s
+"Handbook Bibliometrics" in Scientometrics serves as a comprehensive guide for
+scholars and practitioners navigating the intricate terrain of bibliometric
+methodologies and applications [
+        <xref ref-type="bibr" rid="ref14">14</xref>
+        ]. Additionally, Benjaminsen et al.’s study on "Beyond
+Bibliometrics" in Political Geography challenges conventional perspectives,
+urging scholars to explore the broader implications and limitations of bibliometric
+approaches in understanding scholarly impact and dissemination [
+        <xref ref-type="bibr" rid="ref15 ref16">15, 16</xref>
+        ]. These
+contributions collectively enrich the discourse surrounding bibliometrics, ofering
+insights into its pedagogical, methodological, and conceptual dimensions.
+Moreover, the critical discourse surrounding bibliometrics has led to the exploration
+of alternative metrics and methodologies [
+        <xref ref-type="bibr" rid="ref17 ref18">17, 18</xref>
+        ].
+      </p>
+      <p>
+        In the vast landscape of bibliometrics, the evolution and diversification of
+methodologies and applications have been extensively documented. Lancaster’s
+"Dictionary of Bibliometrics" in the Journal of the American Society for
+Information Science ofers a comprehensive compendium of key terms and concepts
+essential for scholars and practitioners navigating the intricacies of bibliometric
+research [
+        <xref ref-type="bibr" rid="ref19">19</xref>
+        ]. Brookes’ seminal work, "Developments in Bibliometrics," published
+in the Journal of Information Science, sheds light on the evolving trends and
+paradigms within the field, highlighting its dynamic nature and interdisciplinary
+intersections [
+        <xref ref-type="bibr" rid="ref20">20</xref>
+        ]. Grothkopf and Lagerstrom’s exploration of "Telescope
+Bibliometrics 101" in the proceedings of the "Future Professional Communication in
+Astronomy II" conference underscores the relevance of bibliometrics in
+specialized domains beyond traditional academic disciplines [
+        <xref ref-type="bibr" rid="ref21">21</xref>
+        ]. Moreover, Stephan
+et al.’s provocative study titled "Blinkered by Bibliometrics" in Nature
+critically examines the limitations and biases inherent in bibliometric indicators,
+prompting scholars to adopt more nuanced approaches to research evaluation
+[
+        <xref ref-type="bibr" rid="ref22">22</xref>
+        ]. These seminal contributions, along with works such as Simon’s
+"Bibliometrics - Potter, WG" [
+        <xref ref-type="bibr" rid="ref23">23</xref>
+        ], Windsor’s "Bibliometrics and Drugs" [
+        <xref ref-type="bibr" rid="ref24">24</xref>
+        ], and Cox et
+al.’s "Competencies for Bibliometrics" [
+        <xref ref-type="bibr" rid="ref25 ref26">25, 26</xref>
+        ], collectively enrich the discourse
+surrounding bibliometrics, reflecting its multifaceted nature and enduring
+significance in scholarly inquiry.
+      </p>
+      <p>
+        In the realm of bibliometrics, diverse perspectives and applications emerge
+from various scholarly inquiries. Brookes’ examination of "Bibliometrics at Luc
+Diepenbeek" in the Journal of Information Science sheds light on the practical
+implementations and implications of bibliometric methodologies within specific
+institutional contexts [
+        <xref ref-type="bibr" rid="ref27 ref28 ref29">27–29</xref>
+        ]. Similarly, Braun’s exploration of "Bibliometrics in
+Research Evaluation" underscores the role of bibliometric indicators in informing
+research assessment and decision-making processes, contributing to the broader
+discourse on scholarly impact [
+        <xref ref-type="bibr" rid="ref30">30</xref>
+        ]. Rossi, Strumia, and Torre’s presentation on
+"Bibliometrics for Collaboration Works" at the 17th International Conference
+on Scientometrics and Informetrics delves into the collaborative dimensions of
+bibliometric analysis, highlighting its relevance in fostering interdisciplinary
+research endeavors [
+        <xref ref-type="bibr" rid="ref31">31</xref>
+        ]. Moreover, Kurtz’s investigation titled "Comparing People
+with Bibliometrics," presented at the Meeting on Library and Information
+Services in Astronomy VIII, reflects on the nuanced interplay between bibliometric
+metrics and individual scholarly contributions, ofering insights into research
+evaluation practices [
+        <xref ref-type="bibr" rid="ref32">32</xref>
+        ]. These contributions, alongside works such as
+Arsenova’s "New Application of Bibliometrics" [
+        <xref ref-type="bibr" rid="ref33">33</xref>
+        ], Manthorpe’s "Bibliometrics in
+Social Work" [
+        <xref ref-type="bibr" rid="ref34">34</xref>
+        ], and Prathap’s "Bibliometrics - Problems and Promises" [
+        <xref ref-type="bibr" rid="ref35 ref36 ref37 ref38">35–
+38</xref>
+        ], collectively enrich the understanding and utilization of bibliometric
+methodologies across diverse academic domains.
+3
+      </p>
+    </sec>
+    <sec id="sec-3">
+      <title>Results</title>
+      <p>
+        Bibliometrics, as a field of study, encompasses a myriad of dimensions and
+applications that have been explored and articulated over the years [
+        <xref ref-type="bibr" rid="ref39 ref40 ref41 ref42">39–42</xref>
+        ]. Line’s
+article, "The Importance of Bibliometrics," published in the Library Journal,
+underscores the significance of bibliometric analyses in understanding
+scholarly communication and impact within the library context [
+        <xref ref-type="bibr" rid="ref43 ref44 ref45">43–45</xref>
+        ]. Conversely,
+Broadus delves into the historical trajectory of bibliometrics in his work "Early
+Approaches to Bibliometrics," ofering insights into the evolution of
+methodologies [
+        <xref ref-type="bibr" rid="ref46">46</xref>
+        ] and conceptual frameworks within the field [
+        <xref ref-type="bibr" rid="ref47 ref48">47, 48</xref>
+        ]. These perspectives
+converge with Cronin’s exploration of "Semiotics and Evaluative Bibliometrics"
+in the Journal of Documentation, which delves into the semiotic underpinnings of
+bibliometric analysis, emphasizing its role in shaping scholarly evaluation
+practices [
+        <xref ref-type="bibr" rid="ref49 ref50">49, 50</xref>
+        ]. Through such diverse inquiries, the multifaceted nature of
+bibliometrics emerges [
+        <xref ref-type="bibr" rid="ref51">51</xref>
+        ], illuminating its complex interplay with scholarly
+communication, research evaluation, and information retrieval processes [
+        <xref ref-type="bibr" rid="ref52">52</xref>
+        ].
+      </p>
+      <p>
+        The evolution of bibliometrics is deeply entrenched in scholarly discourse
+[
+        <xref ref-type="bibr" rid="ref53">53</xref>
+        ], spanning various disciplines and methodologies. Conversely, Campos and
+      </p>
+      <p>
+        Redondo’s investigation, "Bibliometrics and Clinical Chemistry," in the
+Clinical Chemistry journal, explores the intersection of bibliometric methodologies
+with clinical research paradigms, shedding light on their applicability within the
+realm of medical science [
+        <xref ref-type="bibr" rid="ref54">54</xref>
+        ]. Furthermore, Prathap’s recent contribution,
+"Introduction to Bibliometrics and Scientometrics," in the Annals of Library and
+Information Studies, oefrs contemporary insights into the evolving landscape of
+bibliometric practices, highlighting their role in shaping scholarly
+communication and evaluation in the digital age [
+        <xref ref-type="bibr" rid="ref55">55</xref>
+        ]. Lastly, Narin, Olivastro, and Stevens’
+scholarly inquiry, "Bibliometrics Theory, Practice and Problems," published in
+the Evaluation Review, delves into the theoretical underpinnings and practical
+applications of bibliometric analyses, addressing inherent challenges and
+opportunities within the field [
+        <xref ref-type="bibr" rid="ref56">56</xref>
+        ].
+      </p>
+      <p>
+        Daniel’s seminal work, "Bibliometrics and Scholarly Impact," published in
+the American Psychologist, laid foundational insights into the relationship
+between bibliometrics and scholarly influence, underlining their symbiotic nature
+in academic evaluation [
+        <xref ref-type="bibr" rid="ref57 ref58">57, 58</xref>
+        ]. Zimmer’s article, "Bibliometrics: Simple -
+Understandable - Comprehensible," featured in the Zeitschrift fur Bibliothekswesen
+und Bibliographie, advocates for the accessibility and clarity of bibliometric
+analyses, emphasizing their utility across diverse scholarly landscapes [
+        <xref ref-type="bibr" rid="ref59">59</xref>
+        ]. McLain’s
+review, "Bibliometrics Toolbox," featured in the Journal of the American Society
+for Information Science, underscores the importance of methodological
+frameworks in bibliometric analyses, providing practitioners with essential tools for
+efective research assessment [
+        <xref ref-type="bibr" rid="ref60 ref61 ref62">60–62</xref>
+        ]. Through these diverse perspectives, the
+multifaceted nature of bibliometrics emerges, reflecting its dynamic interplay
+with scholarly inquiry and evaluation processes [
+        <xref ref-type="bibr" rid="ref63">63</xref>
+        ].
+      </p>
+      <p>
+        Knowledge transfer in urban settings is a multifaceted process influenced by
+various factors, including social dynamics, institutional frameworks, and
+technological advancements [
+        <xref ref-type="bibr" rid="ref64 ref65 ref66 ref67">64–67</xref>
+        ]. Understanding the mechanisms driving knowledge
+exchange is essential for fostering innovation, enhancing urban resilience, and
+promoting sustainable development [
+        <xref ref-type="bibr" rid="ref68 ref69">68, 69</xref>
+        ]. However, assessing the efectiveness
+and eficiency of knowledge transfer initiatives remains a complex endeavor,
+requiring robust analytical frameworks and methodologies [
+        <xref ref-type="bibr" rid="ref70 ref71">70, 71</xref>
+        ].
+      </p>
+      <p>
+        Our analysis reveals significant trends and patterns in urban knowledge
+transfer, highlighting the role of interdisciplinary collaboration and information
+dissemination channels [
+        <xref ref-type="bibr" rid="ref67 ref70 ref72">67, 70, 72</xref>
+        ]. By mapping the evolution of key research
+themes and identifying influential stakeholders, we elucidate the mechanisms
+driving urban knowledge exchange processes [
+        <xref ref-type="bibr" rid="ref73">73</xref>
+        ]. Furthermore, our findings
+underscore the importance of open access initiatives and collaborative platforms in
+facilitating knowledge dissemination and promoting innovation in urban contexts
+[
+        <xref ref-type="bibr" rid="ref74 ref75">74, 75</xref>
+        ].
+4
+      </p>
+    </sec>
+    <sec id="sec-4">
+      <title>Discussion</title>
+      <p>
+        The findings presented in this study shed light on the intricate dynamics of
+knowledge transfer in urban environments. Our analysis underscores the
+multifaceted nature of urban knowledge exchange [
+        <xref ref-type="bibr" rid="ref76">76</xref>
+        ], which is influenced by a
+myriad of factors, including technological innovations, institutional frameworks,
+and socio-economic dynamics [
+        <xref ref-type="bibr" rid="ref77 ref78">77, 78</xref>
+        ]. The utilization of bibliometric analysis
+has allowed us to unravel underlying patterns and trends [
+        <xref ref-type="bibr" rid="ref79">79</xref>
+        ], ofering valuable
+insights for policymakers, urban planners, and researchers.
+      </p>
+      <p>
+        One key aspect highlighted by our study is the pivotal role of
+interdisciplinary collaboration in driving urban knowledge transfer [
+        <xref ref-type="bibr" rid="ref80 ref81 ref82 ref83">80–83</xref>
+        ]. The
+emergence of collaborative networks spanning diverse fields such as urban planning,
+environmental science, and information technology underscores the importance
+of cross-disciplinary engagement in addressing complex urban challenges [
+        <xref ref-type="bibr" rid="ref84 ref85">84, 85</xref>
+        ].
+By fostering synergies between diferent disciplines, urban stakeholders can
+harness the collective expertise and resources needed to tackle pressing issues such
+as sustainable development, resilience planning, and social inclusion [
+        <xref ref-type="bibr" rid="ref86">86</xref>
+        ].
+      </p>
+      <p>
+        Another noteworthy finding is the evolving landscape of knowledge
+dissemination channels in urban contexts [
+        <xref ref-type="bibr" rid="ref87">87</xref>
+        ]. The advent of digital technologies and
+online platforms has transformed the way information is accessed, shared, and
+utilized within urban communities [
+        <xref ref-type="bibr" rid="ref88 ref89">88, 89</xref>
+        ]. From open-access repositories to
+social media platforms, the proliferation of digital tools has democratized access
+to knowledge, empowering citizens to actively participate in decision-making
+processes and community development initiatives [
+        <xref ref-type="bibr" rid="ref2 ref90">2, 90</xref>
+        ].
+      </p>
+      <p>
+        Furthermore, our analysis underscores the importance of open access
+initiatives in democratizing knowledge and fostering innovation [
+        <xref ref-type="bibr" rid="ref4 ref91 ref92">4, 91, 92</xref>
+        ]. By
+removing barriers to information access and promoting transparency in scholarly
+communication, open access platforms play a crucial role in bridging the gap
+between academia and practice [
+        <xref ref-type="bibr" rid="ref93">93</xref>
+        ]. By embracing principles of open science
+and knowledge sharing, urban stakeholders can leverage the collective wisdom
+of global communities to address local challenges and advance sustainable urban
+development agendas [
+        <xref ref-type="bibr" rid="ref94 ref95">94, 95</xref>
+        ].
+      </p>
+      <p>
+        Overall, the insights generated from our bibliometric analysis ofer valuable
+implications for urban policymakers, practitioners, and researchers. By
+understanding the underlying mechanisms driving urban knowledge transfer,
+stakeholders can design more efective strategies for fostering innovation, enhancing
+resilience [
+        <xref ref-type="bibr" rid="ref96 ref97">96, 97</xref>
+        ], and promoting inclusive urban development. Moving forward,
+it is imperative to continue monitoring trends in urban knowledge exchange and
+exploring novel approaches to harness the transformative power of knowledge
+for the collective benefit of urban communities [
+        <xref ref-type="bibr" rid="ref98">98</xref>
+        ].
+5
+      </p>
+    </sec>
+    <sec id="sec-5">
+      <title>Conclusion</title>
+      <p>
+        In conclusion, our bibliometric analysis provides valuable insights into the
+dynamics of knowledge transfer in urban environments. By elucidating the patterns
+of scholarly communication and collaboration, our study contributes to the
+growing body of literature on urban knowledge exchange [
+        <xref ref-type="bibr" rid="ref100 ref99">99, 100</xref>
+        ]. Moving forward,
+future research endeavors should explore emerging trends in urban knowledge
+transfer and examine the implications for urban policy, governance, and
+planning.
+      </p>
+    </sec>
+  </body>
+  <back>
+    <ref-list>
+      <ref id="ref1">
+        <mixed-citation>
+          <article-title>(1) NARIN, F; MOLL, J</article-title>
+          .
+          <source>ANNUAL REVIEW OF INFORMATION SCIENCE AND TECHNOLOGY</source>
+          <year>1977</year>
+          ,
+          <volume>12</volume>
+          ,
+          <fpage>35</fpage>
+          -
+          <lpage>58</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref2">
+        <mixed-citation>
+          <article-title>(2) Klimo Jr</article-title>
+          .,
+          <string-name>
+            <given-names>P.</given-names>
+            ;
+            <surname>Michael</surname>
+          </string-name>
+          <string-name>
+            <given-names>II</given-names>
+            , L. M.;
+            <surname>Venable</surname>
+          </string-name>
+          ,
+          <string-name>
+            <given-names>G. T.</given-names>
+            ;
+            <surname>Taylor</surname>
+          </string-name>
+          , D. R.
+          <source>JOURNAL OF NEUROSURGERY</source>
+          <year>2016</year>
+          ,
+          <volume>124</volume>
+          ,
+          <fpage>877</fpage>
+          -
+          <lpage>878</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref3">
+        <mixed-citation>
+          <article-title>(3) WHITE, H.;</article-title>
+          <string-name>
+            <surname>MCCAIN</surname>
+            ,
+            <given-names>K.</given-names>
+          </string-name>
+          <source>ANNUAL REVIEW OF INFORMATION SCIENCE AND TECHNOLOGY</source>
+          <year>1989</year>
+          ,
+          <volume>24</volume>
+          ,
+          <fpage>119</fpage>
+          -
+          <lpage>186</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref4">
+        <mixed-citation>
+          (4)
+          <string-name>
+            <surname>Nietzsche</surname>
+            ,
+            <given-names>F.</given-names>
+          </string-name>
+          <string-name>
+            <surname>EXERCER-LA REVUE FRANCOPHONE DE MEDECINE</surname>
+            <given-names>GENERALE</given-names>
+          </string-name>
+          <year>2023</year>
+          ,
+          <volume>195</volume>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref5">
+        <mixed-citation>
+          (5)
+          <string-name>
+            <surname>Kurtz</surname>
+          </string-name>
+          , M. J.;
+          <string-name>
+            <surname>Bollen</surname>
+            ,
+            <given-names>J</given-names>
+          </string-name>
+          .
+          <source>ANNUAL REVIEW OF INFORMATION SCIENCE AND TECHNOLOGY</source>
+          <year>2010</year>
+          ,
+          <volume>44</volume>
+          ,
+          <fpage>3</fpage>
+          -
+          <lpage>64</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref6">
+        <mixed-citation>
+          <article-title>(6) DAVIS, C</article-title>
+          .
+          <source>LIBRARY TRENDS</source>
+          <year>1981</year>
+          ,
+          <volume>30</volume>
+          ,
+          <fpage>3</fpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref7">
+        <mixed-citation>
+          (7)
+          <string-name>
+            <surname>Czolkoss-Hettwer</surname>
+            ,
+            <given-names>M. ZEITSCHRIFT</given-names>
+          </string-name>
+          <article-title>FUR BIBLIOTHEKSWESEN UND BIBLIOGRAPHIE</article-title>
+          <year>2022</year>
+          ,
+          <volume>69</volume>
+          ,
+          <fpage>171</fpage>
+          -
+          <lpage>173</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref8">
+        <mixed-citation>
+          (8)
+          <string-name>
+            <surname>Lozano</surname>
+            ,
+            <given-names>C. S.</given-names>
+          </string-name>
+          ;
+          <string-name>
+            <surname>Tam</surname>
+            ,
+            <given-names>J.</given-names>
+          </string-name>
+          ;
+          <string-name>
+            <surname>Kulkarni</surname>
+            ,
+            <given-names>A. V.</given-names>
+          </string-name>
+          ;
+          <string-name>
+            <surname>Lozano</surname>
+            ,
+            <given-names>A. M.</given-names>
+          </string-name>
+          <source>JOURNAL OF NEUROSURGERY</source>
+          <year>2016</year>
+          ,
+          <volume>124</volume>
+          ,
+          <fpage>878</fpage>
+          -
+          <lpage>879</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref9">
+        <mixed-citation>
+          (9)
+          <string-name>
+            <given-names>Von</given-names>
+            <surname>Ungern-Sternberg</surname>
+          </string-name>
+          ,
+          <source>S JOURNAL OF EDUCATION FOR LIBRARY AND INFORMATION SCIENCE</source>
+          <year>1998</year>
+          ,
+          <volume>39</volume>
+          ,
+          <fpage>76</fpage>
+          -
+          <lpage>80</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref10">
+        <mixed-citation>
+          (10)
+          <string-name>
+            <surname>NARIN</surname>
+            ,
+            <given-names>F SCIENTOMETRICS</given-names>
+          </string-name>
+          <year>1994</year>
+          ,
+          <volume>30</volume>
+          , 4th International Conference on Bibliometrics, Informetrics and Scientometrics, in Memory of Derek John de Solla Price (
+          <year>1922</year>
+          -1983), BERLIN, GERMANY, SEP
+          <volume>11</volume>
+          -
+          <issue>15</issue>
+          ,
+          <year>1993</year>
+          ,
+          <fpage>147</fpage>
+          -
+          <lpage>155</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref11">
+        <mixed-citation>
+          (11)
+          <string-name>
+            <surname>Cooper</surname>
+          </string-name>
+          , I. D.
+          <source>JOURNAL OF THE MEDICAL LIBRARY ASSOCIATION</source>
+          <year>2015</year>
+          ,
+          <volume>103</volume>
+          ,
+          <fpage>217</fpage>
+          -
+          <lpage>218</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref12">
+        <mixed-citation>
+          <article-title>(12) SCHRADER, A</article-title>
+          .
+          <source>LIBRARY TRENDS</source>
+          <year>1981</year>
+          ,
+          <volume>30</volume>
+          ,
+          <fpage>151</fpage>
+          -
+          <lpage>159</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref13">
+        <mixed-citation>
+          (13)
+          <string-name>
+            <surname>POTTER</surname>
+            ,
+            <given-names>W.</given-names>
+          </string-name>
+          <source>LIBRARY TRENDS</source>
+          <year>1981</year>
+          ,
+          <volume>30</volume>
+          ,
+          <fpage>5</fpage>
+          -
+          <lpage>7</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref14">
+        <mixed-citation>
+          (14)
+          <string-name>
+            <surname>Schubert</surname>
+            ,
+            <given-names>A. SCIENTOMETRICS</given-names>
+          </string-name>
+          <year>2021</year>
+          ,
+          <volume>126</volume>
+          ,
+          <fpage>5379</fpage>
+          -
+          <lpage>5385</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref15">
+        <mixed-citation>
+          (15)
+          <string-name>
+            <surname>Benjaminsen</surname>
+          </string-name>
+          , T. A.;
+          <string-name>
+            <surname>Costalli</surname>
+            ,
+            <given-names>S.</given-names>
+          </string-name>
+          ;
+          <string-name>
+            <surname>Grove</surname>
+            ,
+            <given-names>K.</given-names>
+          </string-name>
+          ;
+          <string-name>
+            <surname>McConnell</surname>
+            ,
+            <given-names>F.</given-names>
+          </string-name>
+          ;
+          <string-name>
+            <surname>Menga</surname>
+            ,
+            <given-names>F.</given-names>
+          </string-name>
+          ;
+          <string-name>
+            <surname>Steinberg</surname>
+            ,
+            <given-names>P. E.</given-names>
+          </string-name>
+          ;
+          <string-name>
+            <surname>Vradis</surname>
+            ,
+            <given-names>A. POLITICAL GEOGRAPHY</given-names>
+          </string-name>
+          <year>2019</year>
+          ,
+          <volume>68</volume>
+          ,
+          <fpage>A1</fpage>
+          -
+          <lpage>A2</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref16">
+        <mixed-citation>
+          <string-name>
+            <surname>(16) De Schryver</surname>
+          </string-name>
+          , G.-M.
+          <source>INTERNATIONAL JOURNAL OF LEXICOGRAPHY</source>
+          <year>2009</year>
+          ,
+          <volume>22</volume>
+          ,
+          <fpage>423</fpage>
+          -
+          <lpage>465</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref17">
+        <mixed-citation>
+          (17)
+          <string-name>
+            <surname>Kokol</surname>
+            ,
+            <given-names>P.</given-names>
+          </string-name>
+          ; Blazun Vosner, H.;
+          <string-name>
+            <surname>Zavrsnik</surname>
+            ,
+            <given-names>J. HEALTH INFORMATION</given-names>
+          </string-name>
+          AND
+          <source>LIBRARIES JOURNAL</source>
+          <year>2021</year>
+          ,
+          <volume>38</volume>
+          ,
+          <fpage>125</fpage>
+          -
+          <lpage>138</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref18">
+        <mixed-citation>
+          (18)
+          <string-name>
+            <surname>Thelwall</surname>
+          </string-name>
+          , M.
+          <source>JOURNAL OF INFORMATION SCIENCE</source>
+          <year>2008</year>
+          ,
+          <volume>34</volume>
+          ,
+          <fpage>605</fpage>
+          -
+          <lpage>621</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref19">
+        <mixed-citation>
+          (19)
+          <string-name>
+            <surname>Lancaster</surname>
+          </string-name>
+          , F.
+          <source>JOURNAL OF THE AMERICAN SOCIETY FOR INFORMATION SCIENCE</source>
+          <year>1997</year>
+          ,
+          <volume>48</volume>
+          ,
+          <fpage>480</fpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref20">
+        <mixed-citation>
+          <article-title>(20) BROOKES, B</article-title>
+          .
+          <source>JOURNAL OF INFORMATION SCIENCE</source>
+          <year>1985</year>
+          ,
+          <volume>10</volume>
+          ,
+          <fpage>91</fpage>
+          -
+          <lpage>92</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref21">
+        <mixed-citation>
+          (21)
+          <string-name>
+            <surname>Grothkopf</surname>
+            ,
+            <given-names>U.</given-names>
+          </string-name>
+          ;
+          <string-name>
+            <surname>Lagerstrom</surname>
+            ,
+            <given-names>J.</given-names>
+          </string-name>
+          <article-title>In FUTURE PROFESSIONAL COMMUNICATION IN ASTRONOMY II, ed. by Accomazzi, A; 2nd Colloquium on Future Professional Communication in Astronomy (FPCA II)</article-title>
+          ,
+          <string-name>
+            <surname>Harvard-Smithsonian Ctr</surname>
+            <given-names>Astrophys</given-names>
+          </string-name>
+          , Cambridge, MA, APR
+          <volume>13</volume>
+          -
+          <issue>14</issue>
+          ,
+          <year>2010</year>
+          ,
+          <year>2011</year>
+          , pp
+          <fpage>109</fpage>
+          +.
+        </mixed-citation>
+      </ref>
+      <ref id="ref22">
+        <mixed-citation>
+          (22)
+          <string-name>
+            <surname>Stephan</surname>
+            ,
+            <given-names>P.</given-names>
+          </string-name>
+          ;
+          <string-name>
+            <surname>Veugelers</surname>
+            ,
+            <given-names>R.</given-names>
+          </string-name>
+          ;
+          <string-name>
+            <surname>Wang</surname>
+            ,
+            <given-names>J. NATURE</given-names>
+          </string-name>
+          <year>2017</year>
+          ,
+          <volume>544</volume>
+          ,
+          <fpage>411</fpage>
+          +.
+        </mixed-citation>
+      </ref>
+      <ref id="ref23">
+        <mixed-citation>
+          <article-title>(23) SIMON, H</article-title>
+          .
+          <source>NACHRICHTEN FUR DOKUMENTATION</source>
+          <year>1982</year>
+          ,
+          <volume>33</volume>
+          ,
+          <fpage>257</fpage>
+          -
+          <lpage>258</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref24">
+        <mixed-citation>
+          <article-title>(24) WINDSOR, D</article-title>
+          .
+          <source>JOURNAL OF CHEMICAL INFORMATION AND COMPUTER SCIENCES</source>
+          <year>1980</year>
+          ,
+          <volume>20</volume>
+          ,
+          <fpage>255</fpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref25">
+        <mixed-citation>
+          (25)
+          <string-name>
+            <surname>Cox</surname>
+            ,
+            <given-names>A.</given-names>
+          </string-name>
+          ;
+          <string-name>
+            <surname>Gadd</surname>
+            ,
+            <given-names>E.</given-names>
+          </string-name>
+          ;
+          <string-name>
+            <surname>Petersohn</surname>
+            ,
+            <given-names>S.</given-names>
+          </string-name>
+          ;
+          <string-name>
+            <surname>Sbafi</surname>
+            ,
+            <given-names>L.</given-names>
+          </string-name>
+          <source>JOURNAL OF LIBRARIANSHIP AND INFORMATION SCIENCE</source>
+          <year>2019</year>
+          ,
+          <volume>51</volume>
+          ,
+          <fpage>746</fpage>
+          -
+          <lpage>762</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref26">
+        <mixed-citation>
+          <string-name>
+            <surname>(26) Da</surname>
+            <given-names>Silva</given-names>
+          </string-name>
+          , R.;
+          <string-name>
+            <surname>Kalil</surname>
+            ,
+            <given-names>F.</given-names>
+          </string-name>
+          ;
+          <string-name>
+            <surname>Moreira de Oliveira</surname>
+            ,
+            <given-names>J. P.</given-names>
+          </string-name>
+          ;
+          <string-name>
+            <surname>Martinez</surname>
+            ,
+            <given-names>A. S. PHYSICA</given-names>
+          </string-name>
+          <article-title>A-STATISTICAL MECHANICS AND ITS APPLICATIONS</article-title>
+          <year>2012</year>
+          ,
+          <volume>391</volume>
+          ,
+          <fpage>2119</fpage>
+          -
+          <lpage>2128</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref27">
+        <mixed-citation>
+          (27)
+          <string-name>
+            <surname>MUNCHPETERSEN</surname>
+            ,
+            <given-names>E LIBRI</given-names>
+          </string-name>
+          <year>1981</year>
+          ,
+          <volume>31</volume>
+          ,
+          <fpage>1</fpage>
+          -
+          <lpage>21</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref28">
+        <mixed-citation>
+          (28)
+          <string-name>
+            <surname>Heinrich</surname>
+          </string-name>
+          , E.;
+          <string-name>
+            <surname>Henderson</surname>
+            ,
+            <given-names>M.</given-names>
+          </string-name>
+          ;
+          <string-name>
+            <surname>Redmond</surname>
+          </string-name>
+          , P.
+          <source>AUSTRALASIAN JOURNAL OF EDUCATIONAL TECHNOLOGY</source>
+          <year>2020</year>
+          , 36,
+          <string-name>
+            <surname>I-IV</surname>
+          </string-name>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref29">
+        <mixed-citation>
+          <article-title>(29) BROOKES, B</article-title>
+          .
+          <source>JOURNAL OF INFORMATION SCIENCE</source>
+          <year>1988</year>
+          ,
+          <volume>14</volume>
+          ,
+          <fpage>63</fpage>
+          -
+          <lpage>64</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref30">
+        <mixed-citation>
+          (30)
+          <string-name>
+            <surname>BRAUN</surname>
+          </string-name>
+          ,
+          <source>T JOURNAL OF INFORMATION SCIENCE</source>
+          <year>1988</year>
+          ,
+          <volume>14</volume>
+          ,
+          <fpage>365</fpage>
+          -
+          <lpage>366</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref31">
+        <mixed-citation>
+          (31)
+          <string-name>
+            <surname>Rossi</surname>
+            ,
+            <given-names>P.</given-names>
+          </string-name>
+          ;
+          <string-name>
+            <surname>Strumia</surname>
+            ,
+            <given-names>A.</given-names>
+          </string-name>
+          ;
+          <string-name>
+            <surname>Torre</surname>
+          </string-name>
+          , R. In
+          <source>17TH INTERNATIONAL CONFERENCE ON SCIENTOMETRICS &amp; INFORMETRICS (ISSI2019)</source>
+          , VOL I, ed. by Catalano, G; Daraio,
+          <string-name>
+            <surname>C</surname>
+          </string-name>
+          ; Gregori,
+          <string-name>
+            <surname>M</surname>
+          </string-name>
+          ; Moed,
+          <string-name>
+            <surname>H.</surname>
+          </string-name>
+          ; Ruocco,
+          <string-name>
+            <surname>G</surname>
+          </string-name>
+          ; 17th
+          <article-title>International Conference of the International-Society-for-Scientometricsand-Informetrics (ISSI) on Scientometrics and Informetrics</article-title>
+          , Sapienza Univ Rome, Rome, ITALY, SEP
+          <volume>02</volume>
+          -
+          <issue>05</issue>
+          ,
+          <year>2019</year>
+          ,
+          <year>2019</year>
+          , pp
+          <fpage>975</fpage>
+          -
+          <lpage>983</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref32">
+        <mixed-citation>
+          (32)
+          <string-name>
+            <surname>Kurtz</surname>
+            ,
+            <given-names>M. J. In LIBRARY</given-names>
+          </string-name>
+          AND
+          <string-name>
+            <surname>INFORMATION SERVICES IN ASTRONOMY</surname>
+          </string-name>
+          <article-title>VIII: ASTRONOMY LIBRARIANSHIP IN THE ERA OF BIG DATA</article-title>
+          AND OPEN SCIENCE, ed. by Lesteven, S; Kern,
+          <string-name>
+            <surname>B; DAbrusco</surname>
+          </string-name>
+          , R; Dorch,
+          <string-name>
+            <surname>B;</surname>
+          </string-name>
+          <article-title>Meeting on Library and Information Services in Astronomy VIII - Astronomy Librarianship in the Era of Big Data</article-title>
+          and Open Science, Observatoire Astronomique Strasbourg, Strasbourg, FRANCE, JUN
+          <volume>06</volume>
+          -
+          <issue>09</issue>
+          ,
+          <year>2017</year>
+          ,
+          <year>2018</year>
+          ; Vol.
+          <volume>186</volume>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref33">
+        <mixed-citation>
+          (33)
+          <string-name>
+            <surname>Arsenova</surname>
+          </string-name>
+          , I.
+          <source>In PROCEEDINGS OF THE 2ND INTERNATIONAL CONFERENCE ON INTEGRATED INFORMATION (IC-ININFO</source>
+          <year>2012</year>
+          ), ed. by Giannakopoulos, G; Sakas,
+          <string-name>
+            <given-names>D.</given-names>
+            ;
+            <surname>Vlachos</surname>
+          </string-name>
+          ,
+          <string-name>
+            <surname>D.</surname>
+          </string-name>
+          ; KyriakiManessi,
+          <source>D; 2nd International Conference on Integrated Information (IC-ININFO)</source>
+          , Budapest, HUNGARY,
+          <source>AUG 30-SEP 03</source>
+          ,
+          <year>2012</year>
+          ,
+          <year>2013</year>
+          ; Vol.
+          <volume>73</volume>
+          , pp
+          <fpage>678</fpage>
+          -
+          <lpage>682</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref34">
+        <mixed-citation>
+          (34)
+          <string-name>
+            <surname>Manthorpe</surname>
+          </string-name>
+          , J.
+          <source>BRITISH JOURNAL OF SOCIAL WORK</source>
+          <year>2007</year>
+          ,
+          <volume>37</volume>
+          ,
+          <fpage>951</fpage>
+          -
+          <lpage>953</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref35">
+        <mixed-citation>
+          (35)
+          <string-name>
+            <surname>Prathap</surname>
+            ,
+            <given-names>G. CURRENT SCIENCE</given-names>
+          </string-name>
+          <year>2015</year>
+          ,
+          <volume>108</volume>
+          ,
+          <fpage>147</fpage>
+          -
+          <lpage>148</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref36">
+        <mixed-citation>
+          (36)
+          <string-name>
+            <surname>Gonzalez-Meijome</surname>
+          </string-name>
+          ,
+          <source>J. M. JOURNAL OF OPTOMETRY</source>
+          <year>2020</year>
+          ,
+          <volume>13</volume>
+          ,
+          <fpage>71</fpage>
+          -
+          <lpage>73</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref37">
+        <mixed-citation>
+          (37)
+          <string-name>
+            <surname>Borgman</surname>
+            ,
+            <given-names>C.</given-names>
+          </string-name>
+          ;
+          <string-name>
+            <surname>Furner</surname>
+          </string-name>
+          ,
+          <source>J ANNUAL REVIEW OF INFORMATION SCIENCE AND TECHNOLOGY</source>
+          <year>2002</year>
+          ,
+          <volume>36</volume>
+          ,
+          <fpage>3</fpage>
+          -
+          <lpage>72</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref38">
+        <mixed-citation>
+          (38)
+          <string-name>
+            <surname>Greener</surname>
+          </string-name>
+          , S.
+          <source>INTERACTIVE LEARNING ENVIRONMENTS</source>
+          <year>2022</year>
+          ,
+          <volume>30</volume>
+          ,
+          <fpage>1168</fpage>
+          -
+          <lpage>1169</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref39">
+        <mixed-citation>
+          (39)
+          <string-name>
+            <surname>Rousseau</surname>
+            ,
+            <given-names>R. NATURE</given-names>
+          </string-name>
+          <year>2014</year>
+          ,
+          <volume>510</volume>
+          ,
+          <fpage>218</fpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref40">
+        <mixed-citation>
+          (
+          <issue>40</issue>
+          )
+          <string-name>
+            <surname>Chang</surname>
+          </string-name>
+          , H.;
+          <string-name>
+            <surname>Gausemeier</surname>
+            ,
+            <given-names>J.</given-names>
+          </string-name>
+          ; Ihmels,
+          <string-name>
+            <given-names>S.</given-names>
+            ;
+            <surname>Wenzelmann</surname>
+          </string-name>
+          ,
+          <string-name>
+            <surname>C. In IMECS</surname>
+          </string-name>
+          2007:
+          <article-title>INTERNATIONAL MULTICONFERENCE OF ENGINEERS AND COMPUTER SCIENTISTS, VOLS I AND II ; International Multiconference of Engineers</article-title>
+          and Computer Scientists, Kowloon,
+          <string-name>
+            <surname>PEOPLES R CHINA</surname>
+          </string-name>
+          ,
+          <source>MAR 21-23</source>
+          ,
+          <year>2007</year>
+          ,
+          <year>2007</year>
+          , pp
+          <fpage>796</fpage>
+          +.
+        </mixed-citation>
+      </ref>
+      <ref id="ref41">
+        <mixed-citation>
+          (41)
+          <string-name>
+            <surname>HICKS</surname>
+          </string-name>
+          , D; CROUCH,
+          <source>D PHYSICS WORLD</source>
+          <year>1990</year>
+          ,
+          <volume>3</volume>
+          ,
+          <fpage>27</fpage>
+          -
+          <lpage>28</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref42">
+        <mixed-citation>
+          (42)
+          <string-name>
+            <surname>Guler</surname>
+          </string-name>
+          , A. T.;
+          <string-name>
+            <surname>Waaijer</surname>
+            ,
+            <given-names>C. J. F.</given-names>
+          </string-name>
+          ;
+          <string-name>
+            <surname>Palmblad</surname>
+          </string-name>
+          , M.
+          <source>In PROCEEDINGS OF ISSI 2015 ISTANBUL: 15TH INTERNATIONAL SOCIETY OF SCIENTOMETRICS AND INFORMETRICS CONFERENCE</source>
+          , ed. by
+          <string-name>
+            <surname>Salah</surname>
+          </string-name>
+          , A.;
+          <string-name>
+            <surname>Tonta</surname>
+            ,
+            <given-names>Y</given-names>
+          </string-name>
+          ; Salah,
+          <string-name>
+            <given-names>A.</given-names>
+            ;
+            <surname>Sugimoto</surname>
+          </string-name>
+          ,
+          <string-name>
+            <surname>C</surname>
+          </string-name>
+          ; Al,
+          <string-name>
+            <surname>U</surname>
+          </string-name>
+          ; 15th International Conference of the International-
+          <article-title>Society-for-Scientometrics-and-</article-title>
+          <string-name>
+            <surname>Informetrics</surname>
+          </string-name>
+          (
+          <article-title>ISSI) on Scientometrics and Informetrics</article-title>
+          , Bogazici Univ, Istanbul, TURKEY,
+          <source>JUN 29-JUL 04</source>
+          ,
+          <year>2015</year>
+          ,
+          <year>2015</year>
+          , pp
+          <fpage>1029</fpage>
+          -
+          <lpage>1034</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref43">
+        <mixed-citation>
+          <article-title>(43) KUNZ, M JOURNAL OF CHEMICAL INFORMATION</article-title>
+          AND
+          <source>COMPUTER SCIENCES</source>
+          <year>1993</year>
+          ,
+          <volume>33</volume>
+          ,
+          <fpage>193</fpage>
+          -
+          <lpage>196</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref44">
+        <mixed-citation>
+          (44)
+          <string-name>
+            <surname>LINE</surname>
+          </string-name>
+          , M.
+          <source>LIBRARY JOURNAL</source>
+          <year>1987</year>
+          ,
+          <volume>112</volume>
+          ,
+          <fpage>10</fpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref45">
+        <mixed-citation>
+          (45)
+          <string-name>
+            <surname>Lewison</surname>
+            ,
+            <given-names>G.</given-names>
+          </string-name>
+          <string-name>
+            <surname>ANAIS DA ACADEMIA BRASILEIRA DE</surname>
+            <given-names>CIENCIAS</given-names>
+          </string-name>
+          <year>2020</year>
+          ,
+          <volume>92</volume>
+          , DOI: 10.1590/
+          <fpage>0001</fpage>
+          -
+          <lpage>3765202020201327</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref46">
+        <mixed-citation>
+          (46)
+          <string-name>
+            <surname>Heinrich</surname>
+          </string-name>
+          , E.;
+          <string-name>
+            <surname>Henderson</surname>
+            ,
+            <given-names>M.</given-names>
+          </string-name>
+          ;
+          <string-name>
+            <surname>Redmond</surname>
+          </string-name>
+          , P.
+          <source>AUSTRALASIAN JOURNAL OF EDUCATIONAL TECHNOLOGY</source>
+          <year>2019</year>
+          , 35,
+          <string-name>
+            <surname>I-IV</surname>
+          </string-name>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref47">
+        <mixed-citation>
+          (47)
+          <string-name>
+            <surname>Hunt</surname>
+            ,
+            <given-names>G. E. ACTA NEUROPSYCHIATRICA</given-names>
+          </string-name>
+          <year>2011</year>
+          ,
+          <volume>23</volume>
+          ,
+          <fpage>80</fpage>
+          -
+          <lpage>81</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref48">
+        <mixed-citation>
+          <article-title>(48) BROADUS, R</article-title>
+          .
+          <source>JOURNAL OF THE AMERICAN SOCIETY FOR INFORMATION SCIENCE</source>
+          <year>1987</year>
+          ,
+          <volume>38</volume>
+          ,
+          <fpage>127</fpage>
+          -
+          <lpage>129</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref49">
+        <mixed-citation>
+          (49)
+          <string-name>
+            <surname>Russell</surname>
+            ,
+            <given-names>J. M.</given-names>
+          </string-name>
+          ;
+          <string-name>
+            <given-names>Victoria</given-names>
+            <surname>Guzman</surname>
+          </string-name>
+          ,
+          <string-name>
+            <given-names>M.</given-names>
+            ;
+            <surname>Aguillo</surname>
+          </string-name>
+          ,
+          <string-name>
+            <given-names>I.; Collazo</given-names>
+            <surname>Reyes</surname>
+          </string-name>
+          ,
+          <string-name>
+            <given-names>F.</given-names>
+            ;
+            <surname>Mugnaini</surname>
+          </string-name>
+          ,
+          <string-name>
+            <surname>R. TRANSINFORMACAO</surname>
+          </string-name>
+          <year>2014</year>
+          ,
+          <volume>26</volume>
+          ,
+          <fpage>227</fpage>
+          -
+          <lpage>228</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref50">
+        <mixed-citation>
+          (50)
+          <string-name>
+            <surname>Cronin</surname>
+          </string-name>
+          ,
+          <source>B JOURNAL OF DOCUMENTATION</source>
+          <year>2000</year>
+          ,
+          <volume>56</volume>
+          ,
+          <fpage>440</fpage>
+          -
+          <lpage>453</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref51">
+        <mixed-citation>
+          <article-title>(51) McCain, K</article-title>
+          .
+          <source>JOURNAL OF THE AMERICAN SOCIETY FOR INFORMATION SCIENCE</source>
+          <year>1997</year>
+          ,
+          <volume>48</volume>
+          ,
+          <fpage>480</fpage>
+          -
+          <lpage>481</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref52">
+        <mixed-citation>
+          (52)
+          <string-name>
+            <surname>PRITCHARD</surname>
+          </string-name>
+          ,
+          <source>A JOURNAL OF DOCUMENTATION</source>
+          <year>1969</year>
+          ,
+          <volume>25</volume>
+          ,
+          <fpage>348</fpage>
+          +.
+        </mixed-citation>
+      </ref>
+      <ref id="ref53">
+        <mixed-citation>
+          (53)
+          <string-name>
+            <surname>Guler</surname>
+          </string-name>
+          , A. T.;
+          <string-name>
+            <surname>Waaijer</surname>
+            ,
+            <given-names>C. J. F.</given-names>
+          </string-name>
+          ;
+          <string-name>
+            <surname>Palmblad</surname>
+            ,
+            <given-names>M. SCIENTOMETRICS</given-names>
+          </string-name>
+          <year>2016</year>
+          ,
+          <volume>107</volume>
+          , 15th International Conference of the International-
+          <article-title>Society-for-Scientometricsand-Informetrics (ISSI) on Scientometrics and Informetrics</article-title>
+          , Bogazici Univ, Istanbul, TURKEY,
+          <source>JUN 29-JUL 04</source>
+          ,
+          <year>2015</year>
+          ,
+          <fpage>385</fpage>
+          -
+          <lpage>398</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref54">
+        <mixed-citation>
+          (54)
+          <string-name>
+            <surname>CAMPOS</surname>
+            , C; REDONDO,
+            <given-names>F. CLINICAL CHEMISTRY</given-names>
+          </string-name>
+          <year>1991</year>
+          ,
+          <volume>37</volume>
+          ,
+          <fpage>303</fpage>
+          -
+          <lpage>304</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref55">
+        <mixed-citation>
+          (55)
+          <string-name>
+            <surname>Prathap</surname>
+          </string-name>
+          , G.
+          <source>ANNALS OF LIBRARY AND INFORMATION STUDIES</source>
+          <year>2022</year>
+          ,
+          <volume>69</volume>
+          ,
+          <fpage>327</fpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref56">
+        <mixed-citation>
+          (56)
+          <string-name>
+            <surname>NARIN</surname>
+            ,
+            <given-names>F</given-names>
+          </string-name>
+          ; OLIVASTRO,
+          <string-name>
+            <surname>D</surname>
+          </string-name>
+          ; STEVENS,
+          <string-name>
+            <surname>K. EVALUATION REVIEW</surname>
+          </string-name>
+          <year>1994</year>
+          ,
+          <volume>18</volume>
+          ,
+          <fpage>65</fpage>
+          -
+          <lpage>76</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref57">
+        <mixed-citation>
+          (57)
+          <string-name>
+            <surname>Hicks</surname>
+            ,
+            <given-names>D. J. PLOS ONE</given-names>
+          </string-name>
+          <year>2016</year>
+          ,
+          <volume>11</volume>
+          , DOI: 10 . 1371 / journal . pone .
+          <volume>0168597</volume>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref58">
+        <mixed-citation>
+          (58) DANIEL, R.
+          <source>AMERICAN PSYCHOLOGIST</source>
+          <year>1979</year>
+          ,
+          <volume>34</volume>
+          ,
+          <fpage>725</fpage>
+          -
+          <lpage>726</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref59">
+        <mixed-citation>
+          (59)
+          <string-name>
+            <surname>Zimmer</surname>
+          </string-name>
+          , D.
+          <source>ZEITSCHRIFT FUR BIBLIOTHEKSWESEN UND BIBLIOGRAPHIE</source>
+          <year>2014</year>
+          ,
+          <volume>61</volume>
+          ,
+          <fpage>388</fpage>
+          -
+          <lpage>389</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref60">
+        <mixed-citation>
+          <article-title>(60) MCLAIN, J</article-title>
+          .
+          <source>JOURNAL OF THE AMERICAN SOCIETY FOR INFORMATION SCIENCE</source>
+          <year>1990</year>
+          ,
+          <volume>41</volume>
+          ,
+          <fpage>70</fpage>
+          -
+          <lpage>71</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref61">
+        <mixed-citation>
+          (61)
+          <string-name>
+            <surname>Bornmann</surname>
+            ,
+            <given-names>L. QUANTITATIVE</given-names>
+          </string-name>
+          <source>SCIENCE STUDIES</source>
+          <year>2020</year>
+          ,
+          <volume>1</volume>
+          ,
+          <fpage>171</fpage>
+          -
+          <lpage>182</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref62">
+        <mixed-citation>
+          (62)
+          <string-name>
+            <surname>Yilmaz</surname>
+          </string-name>
+          , M.
+          <source>TURKISH LIBRARIANSHIP</source>
+          <year>2019</year>
+          ,
+          <volume>33</volume>
+          ,
+          <fpage>43</fpage>
+          -
+          <lpage>49</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref63">
+        <mixed-citation>
+          (63)
+          <string-name>
+            <surname>Friedberg</surname>
+            ,
+            <given-names>E. C. DNA REPAIR</given-names>
+          </string-name>
+          <year>2010</year>
+          ,
+          <volume>9</volume>
+          ,
+          <fpage>1018</fpage>
+          -
+          <lpage>1020</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref64">
+        <mixed-citation>
+          (64)
+          <string-name>
+            <surname>Burrell</surname>
+          </string-name>
+          ,
+          <source>Q JOURNAL OF DOCUMENTATION</source>
+          <year>1995</year>
+          ,
+          <volume>51</volume>
+          ,
+          <fpage>448</fpage>
+          -
+          <lpage>450</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref65">
+        <mixed-citation>
+          (65)
+          <string-name>
+            <surname>Stefanis</surname>
+            ,
+            <given-names>C.</given-names>
+          </string-name>
+          ;
+          <string-name>
+            <surname>Giorgi</surname>
+            ,
+            <given-names>E.</given-names>
+          </string-name>
+          ;
+          <string-name>
+            <surname>Tselemponis</surname>
+            ,
+            <given-names>G.</given-names>
+          </string-name>
+          ; Voidarou,
+          <string-name>
+            <given-names>C.</given-names>
+            ;
+            <surname>Skoufos</surname>
+          </string-name>
+          ,
+          <string-name>
+            <given-names>I.</given-names>
+            ;
+            <surname>Tzora</surname>
+          </string-name>
+          ,
+          <string-name>
+            <given-names>A.</given-names>
+            ;
+            <surname>Tsigalou</surname>
+          </string-name>
+          ,
+          <string-name>
+            <given-names>C.</given-names>
+            ;
+            <surname>Kourkoutas</surname>
+          </string-name>
+          ,
+          <string-name>
+            <given-names>Y.</given-names>
+            ;
+            <surname>Constantinidis</surname>
+          </string-name>
+          ,
+          <string-name>
+            <given-names>T. C.</given-names>
+            ;
+            <surname>Bezirtzoglou</surname>
+          </string-name>
+          ,
+          <string-name>
+            <surname>E. STATS</surname>
+          </string-name>
+          <year>2023</year>
+          ,
+          <volume>6</volume>
+          ,
+          <fpage>956</fpage>
+          -
+          <lpage>979</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref66">
+        <mixed-citation>
+          (66)
+          <string-name>
+            <surname>Borgoyakova</surname>
+            ,
+            <given-names>K.</given-names>
+          </string-name>
+          ;
+          <string-name>
+            <surname>Zemskov</surname>
+            ,
+            <given-names>A. NAUCHNYE</given-names>
+          </string-name>
+          <article-title>I TEKHNICHESKIE BIBLIOTEKISCIENTIFIC</article-title>
+          AND
+          <source>TECHNICAL LIBRARIES</source>
+          <year>2018</year>
+          ,
+          <volume>89</volume>
+          -
+          <fpage>100</fpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref67">
+        <mixed-citation>
+          (67)
+          <string-name>
+            <surname>Kamalski</surname>
+          </string-name>
+          , J.;
+          <string-name>
+            <surname>Kirby</surname>
+            ,
+            <given-names>A. CITIES</given-names>
+          </string-name>
+          <year>2012</year>
+          ,
+          <volume>29</volume>
+          ,
+          <fpage>S3</fpage>
+          -
+          <lpage>S8</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref68">
+        <mixed-citation>
+          <article-title>(68) PERITZ, B</article-title>
+          .
+          <source>SCIENTOMETRICS</source>
+          <year>1990</year>
+          ,
+          <volume>18</volume>
+          ,
+          <fpage>323</fpage>
+          -
+          <lpage>329</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref69">
+        <mixed-citation>
+          (69)
+          <string-name>
+            <surname>Nederhof</surname>
+            ,
+            <given-names>A. J.</given-names>
+          </string-name>
+          ; Tijssen,
+          <string-name>
+            <surname>R. J. W.</surname>
+          </string-name>
+          ; Moed,
+          <string-name>
+            <surname>H. F. RESEARCH EVALUATION</surname>
+          </string-name>
+          <year>2010</year>
+          ,
+          <volume>19</volume>
+          ,
+          <fpage>158</fpage>
+          -
+          <lpage>160</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref70">
+        <mixed-citation>
+          (70)
+          <string-name>
+            <surname>Keramatfar</surname>
+            ,
+            <given-names>A.</given-names>
+          </string-name>
+          ;
+          <string-name>
+            <surname>Amirkhani</surname>
+          </string-name>
+          , H.
+          <source>JOURNAL OF INFORMATION SCIENCE</source>
+          <year>2019</year>
+          ,
+          <volume>45</volume>
+          ,
+          <fpage>3</fpage>
+          -
+          <lpage>15</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref71">
+        <mixed-citation>
+          (71)
+          <string-name>
+            <surname>Johnson</surname>
+          </string-name>
+          , I. M.
+          <source>INFORMATION DEVELOPMENT</source>
+          <year>2011</year>
+          ,
+          <volume>27</volume>
+          ,
+          <fpage>92</fpage>
+          -
+          <lpage>93</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref72">
+        <mixed-citation>
+          (72)
+          <string-name>
+            <surname>Brimblecombe</surname>
+            ,
+            <given-names>P.</given-names>
+          </string-name>
+          ;
+          <string-name>
+            <surname>Grossi</surname>
+            ,
+            <given-names>C. M. ATMOSPHERIC ENVIRONMENT</given-names>
+          </string-name>
+          <year>2009</year>
+          ,
+          <volume>43</volume>
+          ,
+          <fpage>9</fpage>
+          -
+          <lpage>12</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref73">
+        <mixed-citation>
+          <article-title>(73) TODOROV</article-title>
+          , R; GLAENZEL,
+          <string-name>
+            <surname>W INFORMATION PROCESSING</surname>
+          </string-name>
+          &amp;
+          <article-title>MANAGEMENT 1990, 26, COLLOQUIUM ON EVALUATION AND DOCUMENTARY INFORMATION SYSTEMS</article-title>
+          ,
+          <source>UNIV BORDEAUX III, BORDEAUX, FRANCE, NOV 24-25</source>
+          ,
+          <year>1988</year>
+          ,
+          <fpage>673</fpage>
+          -
+          <lpage>680</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref74">
+        <mixed-citation>
+          (74)
+          <string-name>
+            <surname>Stuart</surname>
+          </string-name>
+          , D.
+          <source>ONLINE INFORMATION REVIEW</source>
+          <year>2017</year>
+          ,
+          <volume>41</volume>
+          ,
+          <fpage>428</fpage>
+          -
+          <lpage>435</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref75">
+        <mixed-citation>
+          (75)
+          <string-name>
+            <surname>Beaufils</surname>
+          </string-name>
+          , P.
+          <source>ORTHOPAEDICS &amp; TRAUMATOLOGY-SURGERY &amp; RESEARCH</source>
+          <year>2019</year>
+          ,
+          <volume>105</volume>
+          ,
+          <fpage>1423</fpage>
+          -
+          <lpage>1424</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref76">
+        <mixed-citation>
+          (76)
+          <string-name>
+            <surname>Godin</surname>
+            ,
+            <given-names>B. SCIENTOMETRICS</given-names>
+          </string-name>
+          <year>2006</year>
+          ,
+          <volume>68</volume>
+          ,
+          <fpage>109</fpage>
+          -
+          <lpage>133</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref77">
+        <mixed-citation>
+          (77)
+          <string-name>
+            <surname>Klein</surname>
+            , W.; Bloom,
+            <given-names>M SOCIAL</given-names>
+          </string-name>
+          <article-title>WORK IN HEALTH CARE</article-title>
+          <year>2005</year>
+          ,
+          <volume>41</volume>
+          ,
+          <fpage>117</fpage>
+          -
+          <lpage>121</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref78">
+        <mixed-citation>
+          <article-title>(78) BROADUS</article-title>
+          ,
+          <string-name>
+            <surname>R. SCIENTOMETRICS</surname>
+          </string-name>
+          <year>1987</year>
+          ,
+          <volume>12</volume>
+          ,
+          <fpage>373</fpage>
+          -
+          <lpage>379</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref79">
+        <mixed-citation>
+          <article-title>(79) McCain, K</article-title>
+          .
+          <source>JOURNAL OF THE AMERICAN SOCIETY FOR INFORMATION SCIENCE</source>
+          <year>1996</year>
+          ,
+          <volume>47</volume>
+          ,
+          <fpage>716</fpage>
+          -
+          <lpage>717</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref80">
+        <mixed-citation>
+          (80)
+          <string-name>
+            <surname>Pallis</surname>
+          </string-name>
+          , G.
+          <source>IEEE INTERNET COMPUTING</source>
+          <year>2019</year>
+          ,
+          <volume>23</volume>
+          ,
+          <fpage>5</fpage>
+          -
+          <lpage>7</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref81">
+        <mixed-citation>
+          (81)
+          <string-name>
+            <surname>Romancini</surname>
+            ,
+            <given-names>R. EM QUESTAO</given-names>
+          </string-name>
+          <year>2017</year>
+          ,
+          <volume>23</volume>
+          ,
+          <fpage>300</fpage>
+          -
+          <lpage>305</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref82">
+        <mixed-citation>
+          (82)
+          <string-name>
+            <surname>Meadows</surname>
+            ,
+            <given-names>J INTERLENDING</given-names>
+          </string-name>
+          &amp;
+          <source>DOCUMENT SUPPLY</source>
+          <year>2005</year>
+          ,
+          <volume>33</volume>
+          ,
+          <fpage>90</fpage>
+          -
+          <lpage>94</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref83">
+        <mixed-citation>
+          (83)
+          <string-name>
+            <surname>PHILLIPS</surname>
+            , D.; TURNEY,
+            <given-names>J SCIENTOMETRICS</given-names>
+          </string-name>
+          <year>1988</year>
+          ,
+          <volume>14</volume>
+          ,
+          <fpage>185</fpage>
+          -
+          <lpage>200</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref84">
+        <mixed-citation>
+          (84)
+          <string-name>
+            <surname>Atkinson</surname>
+          </string-name>
+          , R.
+          <source>AUSTRALASIAN JOURNAL OF EDUCATIONAL TECHNOLOGY</source>
+          <year>2012</year>
+          ,
+          <volume>28</volume>
+          , III-V.
+        </mixed-citation>
+      </ref>
+      <ref id="ref85">
+        <mixed-citation>
+          (85)
+          <string-name>
+            <surname>Smith</surname>
+            ,
+            <given-names>D. R. CONTACT DERMATITIS</given-names>
+          </string-name>
+          <year>2008</year>
+          ,
+          <volume>59</volume>
+          ,
+          <fpage>133</fpage>
+          -
+          <lpage>136</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref86">
+        <mixed-citation>
+          (86)
+          <string-name>
+            <surname>Mokhnacheva</surname>
+            ,
+            <given-names>Y.</given-names>
+          </string-name>
+          ;
+          <string-name>
+            <surname>Tsvetkova</surname>
+            ,
+            <given-names>V. NAUCHNYE</given-names>
+          </string-name>
+          <article-title>I TEKHNICHESKIE BIBLIOTEKISCIENTIFIC</article-title>
+          AND
+          <source>TECHNICAL LIBRARIES</source>
+          <year>2018</year>
+          ,
+          <volume>51</volume>
+          -
+          <fpage>62</fpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref87">
+        <mixed-citation>
+          (87)
+          <string-name>
+            <surname>Moppett</surname>
+          </string-name>
+          , I. K.
+          <source>BRITISH JOURNAL OF ANAESTHESIA</source>
+          <year>2010</year>
+          ,
+          <volume>105</volume>
+          , Annual Meeting of the Anaesthetic-Research-Society, Univ Nottingham, Nottingham,
+          <string-name>
+            <surname>ENGLAND</surname>
+          </string-name>
+          , JUL
+          <volume>01</volume>
+          -
+          <issue>02</issue>
+          ,
+          <year>2010</year>
+          ,
+          <fpage>721</fpage>
+          -
+          <lpage>722</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref88">
+        <mixed-citation>
+          (88)
+          <string-name>
+            <surname>AIYEPEKU</surname>
+            ,
+            <given-names>W.</given-names>
+          </string-name>
+          <source>INFORMATION SCIENTIST</source>
+          <year>1975</year>
+          ,
+          <volume>9</volume>
+          ,
+          <fpage>29</fpage>
+          -
+          <lpage>34</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref89">
+        <mixed-citation>
+          (89)
+          <string-name>
+            <surname>Bornmann</surname>
+          </string-name>
+          , L.;
+          <string-name>
+            <surname>de Moya-Anegon</surname>
+            ,
+            <given-names>F.</given-names>
+          </string-name>
+          <source>JOURNAL OF INFORMATION SCIENCE</source>
+          <year>2019</year>
+          ,
+          <volume>45</volume>
+          ,
+          <fpage>416</fpage>
+          -
+          <lpage>425</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref90">
+        <mixed-citation>
+          (90)
+          <string-name>
+            <surname>Langheinrich</surname>
+          </string-name>
+          , M.
+          <source>IEEE PERVASIVE COMPUTING</source>
+          <year>2018</year>
+          ,
+          <volume>17</volume>
+          ,
+          <fpage>6</fpage>
+          -
+          <lpage>9</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref91">
+        <mixed-citation>
+          (91)
+          <string-name>
+            <surname>McEnery-Stonelake</surname>
+            ,
+            <given-names>M.</given-names>
+          </string-name>
+          ;
+          <string-name>
+            <surname>Bernhard</surname>
+            ,
+            <given-names>J. D.</given-names>
+          </string-name>
+          <string-name>
+            <surname>ACTA</surname>
+          </string-name>
+          DERMATO-VENEREOLOGICA
+          <year>2017</year>
+          ,
+          <volume>97</volume>
+          ,
+          <fpage>1051</fpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref92">
+        <mixed-citation>
+          (92)
+          <string-name>
+            <surname>PAISLEY</surname>
+            ,
+            <given-names>W COMMUNICATION</given-names>
+          </string-name>
+          <source>RESEARCH</source>
+          <year>1989</year>
+          ,
+          <volume>16</volume>
+          ,
+          <fpage>701</fpage>
+          -
+          <lpage>717</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref93">
+        <mixed-citation>
+          (93)
+          <string-name>
+            <surname>LANCASTER</surname>
+          </string-name>
+          , F.;
+          <article-title>ABDULLAH, S. In SCIENCE INDICATORS FOR DEVELOPING COUNTRIES</article-title>
+          , ed. by Arvanitis, R; Gaillard,
+          <string-name>
+            <surname>J</surname>
+          </string-name>
+          ; International Conference on Science Indicators for Developing Countries,
+          <string-name>
+            <surname>UNESCO</surname>
+          </string-name>
+          , PARIS, FRANCE, OCT 15-
+          <issue>19</issue>
+          ,
+          <year>1990</year>
+          ,
+          <year>1992</year>
+          , pp
+          <fpage>319</fpage>
+          -
+          <lpage>331</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref94">
+        <mixed-citation>
+          (94)
+          <string-name>
+            <surname>WHITE</surname>
+            ,
+            <given-names>E. SPECIAL LIBRARIES</given-names>
+          </string-name>
+          <year>1985</year>
+          ,
+          <volume>76</volume>
+          ,
+          <fpage>35</fpage>
+          -
+          <lpage>42</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref95">
+        <mixed-citation>
+          (95)
+          <string-name>
+            <surname>Dzelalija</surname>
+            , G.; Roic,
+            <given-names>M. LAND</given-names>
+          </string-name>
+          <year>2023</year>
+          ,
+          <volume>12</volume>
+          , DOI: 10.3390/land12051097.
+        </mixed-citation>
+      </ref>
+      <ref id="ref96">
+        <mixed-citation>
+          (96)
+          <string-name>
+            <surname>Neufeld</surname>
+          </string-name>
+          , J.; von Ins, M.
+          <source>RESEARCH EVALUATION</source>
+          <year>2011</year>
+          ,
+          <volume>20</volume>
+          ,
+          <fpage>31</fpage>
+          -
+          <lpage>46</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref97">
+        <mixed-citation>
+          (97)
+          <string-name>
+            <surname>Traynor</surname>
+            , M; Raferty,
+            <given-names>A</given-names>
+          </string-name>
+          .
+          <source>JOURNAL OF ADVANCED NURSING</source>
+          <year>2001</year>
+          ,
+          <volume>36</volume>
+          ,
+          <fpage>167</fpage>
+          -
+          <lpage>168</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref98">
+        <mixed-citation>
+          <article-title>(98) HARTER, S</article-title>
+          .
+          <source>JOURNAL OF DOCUMENTATION</source>
+          <year>1992</year>
+          ,
+          <volume>48</volume>
+          ,
+          <fpage>333</fpage>
+          -
+          <lpage>336</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref99">
+        <mixed-citation>
+          (99)
+          <string-name>
+            <surname>Gumpenberger</surname>
+            ,
+            <given-names>C.</given-names>
+          </string-name>
+          ;
+          <string-name>
+            <surname>Wieland</surname>
+            ,
+            <given-names>M.</given-names>
+          </string-name>
+          ;
+          <string-name>
+            <surname>Gorraiz</surname>
+            ,
+            <given-names>J</given-names>
+          </string-name>
+          .
+          <source>ZEITSCHRIFT FUR BIBLIOTHEKSWESEN UND BIBLIOGRAPHIE</source>
+          <year>2014</year>
+          ,
+          <volume>61</volume>
+          ,
+          <fpage>247</fpage>
+          -
+          <lpage>250</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref100">
+        <mixed-citation>
+          (100)
+          <string-name>
+            <surname>Alvarado</surname>
+            , R. U.; RestrepoArango,
+            <given-names>C. REVISTA</given-names>
+          </string-name>
+          <string-name>
+            <surname>IBERO-AMERICANA DE CIENCIA DA</surname>
+            <given-names>INFORMACAO</given-names>
+          </string-name>
+          <year>2020</year>
+          ,
+          <volume>13</volume>
+          ,
+          <fpage>200</fpage>
+          -
+          <lpage>222</lpage>
+          .
+        </mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>
+

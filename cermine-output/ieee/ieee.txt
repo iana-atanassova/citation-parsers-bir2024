@@ -1,0 +1,782 @@
+
+
+    [1] F NARIN and J. MOLL, “Bibliometrics,” ANNUAL REVIEW OF INFORMATION SCIENCE AND TECHNOLOGY, vol. 12, pp. 35-58, 1977, issn: 0066-4200.
+        Author: NARIN, F
+        Author: J. MOLL
+        Journal title: ANNUAL REVIEW OF INFORMATION SCIENCE AND TECHNOLOGY
+        Volume: 12
+        Pages: 35-58
+        Publication date: 1977
+
+    [2] P. Klimo Jr., L. M. Michael II, G. T. Venable, and D. R. Taylor, “Bibliometrics,” JOURNAL OF NEUROSURGERY, vol. 124, no. 3, pp. 877- 878, 2016, issn: 0022-3085. doi: 10.3171/2015.7.JNS151647.
+        Author: Jr., P. Klimo
+        Author: L. M. Michael, II
+        Author: Taylor, D. R.
+        Journal title: ” JOURNAL OF NEUROSURGERY
+        Volume: 124
+        Issue: 3
+        Pages: 877-878
+        Publication date: 2016
+
+    [3] H. WHITE and K. MCCAIN, “Bibliometrics,” ANNUAL REVIEW OF INFORMATION SCIENCE AND TECHNOLOGY, vol. 24, pp. 119-186, 1989, issn: 0066-4200.
+        Title: Bibliometrics,” ANNUAL REVIEW OF INFORMATION SCIENCE AND TECHNOLOGY
+        Author: WHITE, H.
+        Author: MCCAIN, K.
+        Volume: 24
+        Pages: 119-186
+        Publication date: 1989
+
+    [4] F. Nietzsche, “Bibliometrics journey,” EXERCER-LA REVUE FRANCOPHONE DE MEDECINE GENERALE, no. 193, p. 195, 2023, issn: 0998-3953.
+        Author: Nietzsche, F.
+        Author: EXERCER-LA REVUE FRANCOPHONE DE MEDECINE GENERALE
+        Issue: 193
+        Pages: 195-3953
+        Publication date: 2023
+
+    [5] M. J. Kurtz and J. Bollen, “Usage bibliometrics,” ANNUAL REVIEW OF INFORMATION SCIENCE AND TECHNOLOGY, vol. 44, pp. 3- 64, 2010, issn: 0066-4200.
+        Title: Usage bibliometrics,” ANNUAL REVIEW OF INFORMATION SCIENCE AND TECHNOLOGY
+        Author: Kurtz, M. J.
+        Author: Bollen, J.
+        Volume: 44
+        Pages: 3-64
+        Publication date: 2010
+
+    [6] C. DAVIS, “Bibliometrics - foreword,” LIBRARY TRENDS, vol. 30, no. 1, p. 3, 1981, issn: 0024-2594.
+        Author: DAVIS, C.
+        Journal title: LIBRARY TRENDS
+        Volume: 30
+        Issue: 1
+        Pages: 3-2594
+        Publication date: 1981
+
+    [7] M. Czolkoss-Hettwer, “Handbook bibliometrics,” ZEITSCHRIFT FUR BIBLIOTHEKSWESEN UND BIBLIOGRAPHIE, vol. 69, no. 3, pp. 171- 173, 2022, issn: 0044-2380.
+        Title: Handbook bibliometrics,” ZEITSCHRIFT FUR BIBLIOTHEKSWESEN UND BIBLIOGRAPHIE
+        Author: Czolkoss-Hettwer, M.
+        Volume: 69
+        Issue: 3
+        Pages: 171-173
+        Publication date: 2022
+
+    [8] C. S. Lozano, J. Tam, A. V. Kulkarni, and A. M. Lozano, “Bibliometrics response,” JOURNAL OF NEUROSURGERY, vol. 124, no. 3, pp. 878- 879, 2016, issn: 0022-3085.
+        Title: and
+        Author: Lozano, C. S.
+        Author: Tam, J.
+        Author: Kulkarni, A. V.
+        Author: Lozano, A. M.
+        Journal title: ” JOURNAL OF NEUROSURGERY
+        Volume: 124
+        Issue: 3
+        Pages: 878-879
+        Publication date: 2016
+
+    [9] S von Ungern-Sternberg, “Teaching bibliometrics,” JOURNAL OF EDUCATION FOR LIBRARY AND INFORMATION SCIENCE, vol. 39, no. 1, pp. 76-80, 1998, issn: 0748-5786. doi: 10.2307/40324182.
+        Author: von, S
+        Journal title: ” JOURNAL OF EDUCATION FOR LIBRARY AND INFORMATION SCIENCE
+        Volume: 39
+        Issue: 1
+        Pages: 76-80
+        Publication date: 1998
+
+    [10] F NARIN, “Patent bibliometrics,” SCIENTOMETRICS, vol. 30, no. 1, pp. 147-155, 1994, 4th International Conference on Bibliometrics, Informetrics and Scientometrics, in Memory of Derek John de Solla Price (1922-1983), BERLIN, GERMANY, SEP 11-15, 1993, issn: 0138-9130. doi: 10.1007/BF02017219.
+        Author: F NARIN
+        Journal title: ” SCIENTOMETRICS
+        Volume: 30
+        Issue: 1
+        Pages: 147-155
+        Publication date: 1994
+
+    [11] I. D. Cooper, “Bibliometrics basics,” JOURNAL OF THE MEDICAL LIBRARY ASSOCIATION, vol. 103, no. 4, pp. 217-218, 2015, issn: 1536- 5050. doi: 10.3163/1536-5050.103.4.013.
+        Author: Cooper, I. D.
+        Journal title: ” JOURNAL OF THE MEDICAL LIBRARY ASSOCIATION
+        Volume: 103
+        Issue: 4
+        Pages: 217-218
+        Publication date: 2015
+
+    [12] A. SCHRADER, “Teaching bibliometrics,” LIBRARY TRENDS, vol. 30, no. 1, pp. 151-159, 1981, issn: 0024-2594.
+        Author: A. SCHRADER
+        Journal title: ” LIBRARY TRENDS
+        Volume: 30
+        Issue: 1
+        Pages: 151-159
+        Publication date: 1981
+
+    [13] W. POTTER, “Bibliometrics - introduction,” LIBRARY TRENDS, vol. 30, no. 1, pp. 5-7, 1981, issn: 0024-2594.
+        Author: W. POTTER
+        Journal title: LIBRARY TRENDS
+        Volume: 30
+        Issue: 1
+        Pages: 5-7
+        Publication date: 1981
+
+    [14] A. Schubert, “Handbook bibliometrics,” SCIENTOMETRICS, vol. 126, no. 6, pp. 5379-5385, 2021, issn: 0138-9130. doi: 10.1007/s11192-021- 03975-2.
+        Author: Schubert, A.
+        Journal title: ” SCIENTOMETRICS
+        Volume: 126
+        Issue: 6
+        Pages: 5379-5385
+        Publication date: 2021
+
+    [15] T. A. Benjaminsen, S. Costalli, K. Grove, et al., “Beyond bibliometrics,” POLITICAL GEOGRAPHY, vol. 68, A1-A2, 2019, issn: 0962-6298. doi: 10.1016/j.polgeo.2018.12.004.
+        Author: Benjaminsen, T. A.
+        Author: Costalli, S.
+        Author: Grove, K.
+        Journal title: ” POLITICAL GEOGRAPHY
+        Volume: 68
+        Pages: A1-A2
+        Publication date: 2019
+
+    [16] G.-M. de Schryver, “Bibliometrics in lexicography,” INTERNATIONAL JOURNAL OF LEXICOGRAPHY, vol. 22, no. 4, pp. 423-465, 2009, issn: 0950-3846. doi: 10.1093/ijl/ecp027.
+        Author: G.-M. de Schryver
+        Journal title: INTERNATIONAL JOURNAL OF LEXICOGRAPHY
+        Volume: 22
+        Issue: 4
+        Pages: 423-465
+        Publication date: 2009
+
+    [17] P. Kokol, H. Blazun Vosner, and J. Zavrsnik, “Application of bibliometrics in medicine: A historical bibliometrics analysis,” HEALTH INFORMATION AND LIBRARIES JOURNAL, vol. 38, no. 2, pp. 125-138, 2021, issn: 1471-1834. doi: 10.1111/hir.12295.
+        Title: Application of bibliometrics in medicine: A historical bibliometrics analysis
+        Author: Kokol, P.
+        Author: Vosner, H. Blazun
+        Author: Zavrsnik, J.
+        Journal title: ” HEALTH INFORMATION AND LIBRARIES JOURNAL
+        Volume: 38
+        Issue: 2
+        Pages: 125-138
+        Publication date: 2021
+
+    [18] M. Thelwall, “Bibliometrics to webometrics,” JOURNAL OF INFORMATION SCIENCE, vol. 34, no. 4, pp. 605-621, 2008, issn: 0165-5515. doi: 10.1177/0165551507087238.
+        Author: Thelwall, M.
+        Journal title: ” JOURNAL OF INFORMATION SCIENCE
+        Volume: 34
+        Issue: 4
+        Pages: 605-621
+        Publication date: 2008
+
+    [19] F. Lancaster, “Dictionary of bibliometrics,” JOURNAL OF THE AMERICAN SOCIETY FOR INFORMATION SCIENCE, vol. 48, no. 5, p. 480, 1997, issn: 0002-8231. doi: 10 . 1002 / (SICI ) 1097 - 4571(199705 ) 48 : 5<480::AID-ASI18>3.0.CO;2-2.
+        Title: :AID-ASI18>3.0
+        Author: Lancaster, F.
+        Journal title: ” JOURNAL OF THE AMERICAN SOCIETY FOR INFORMATION SCIENCE
+        Volume: 48
+        Issue: 5
+        Pages: 480-8231
+        Publication date: 1997
+
+    [20] B. BROOKES, “Developments in bibliometrics,” JOURNAL OF INFORMATION SCIENCE, vol. 10, no. 2, pp. 91-92, 1985, issn: 0165-5515. doi: 10.1177/016555158501000206.
+        Author: B. BROOKES
+        Journal title: ” JOURNAL OF INFORMATION SCIENCE
+        Volume: 10
+        Issue: 2
+        Pages: 91-92
+        Publication date: 1985
+
+    [21] U. Grothkopf and J. Lagerstrom, “Telescope bibliometrics 101,” in FUTURE PROFESSIONAL COMMUNICATION IN ASTRONOMY II, A Accomazzi, Ed., ser. Astrophysics and Space Science Proceedings, 2nd Colloquium on Future Professional Communication in Astronomy (FPCA II), Harvard-Smithsonian Ctr Astrophys, Cambridge, MA, APR 13-14, 2010, Smithsonian Astrophys Observatory; Amer Astronom Soc; EDP Sci; Wiley-Blackwell; IOP Publish; Springer; Elsevier, 2011, pp. 109+, isbn: 978-1-4419-8368-8. doi: 10.1007/978-1-4419-8369-5\_12.
+        Title: Telescope bibliometrics 101,” in FUTURE PROFESSIONAL COMMUNICATION IN ASTRONOMY II,
+        Author: Grothkopf, U.
+        Author: Lagerstrom, J.
+        Author: Harvard-Smithsonian Ctr, Astrophys
+        Journal title: ser. Astrophysics and Space Science Proceedings, 2nd Colloquium on Future Professional Communication in Astronomy (FPCA II)
+        Volume: 13
+        Issue: 14
+        Pages: 978
+        Publication date: 2010
+
+    [22] P. Stephan, R. Veugelers, and J. Wang, “Blinkered by bibliometrics,” NATURE, vol. 544, no. 7651, pp. 411+, 2017, issn: 0028-0836. doi: 10. 1038/544411a.
+        Title: Blinkered by bibliometrics
+        Author: Stephan, P.
+        Author: Veugelers, R.
+        Author: Wang, J.
+        Journal title: ” NATURE
+        Volume: 544
+        Issue: 7651
+        Pages: 0028-0836
+        Publication date: 2017
+
+    [23] H. SIMON, “Bibliometrics - potter,wg,” NACHRICHTEN FUR DOKUMENTATION, vol. 33, no. 6, pp. 257-258, 1982, issn: 0027-7436.
+        Author: H. SIMON
+        Journal title: NACHRICHTEN FUR DOKUMENTATION
+        Volume: 33
+        Issue: 6
+        Pages: 257-258
+        Publication date: 1982
+
+    [24] D. WINDSOR, “Bibliometrics and drugs,” JOURNAL OF CHEMICAL INFORMATION AND COMPUTER SCIENCES, vol. 20, no. 4, p. 255, 1980, issn: 0095-2338. doi: 10.1021/ci60024a600.
+        Title: Bibliometrics and drugs
+        Author: D. WINDSOR
+        Journal title: ” JOURNAL OF CHEMICAL INFORMATION AND COMPUTER SCIENCES
+        Volume: 20
+        Issue: 4
+        Pages: 255-2338
+        Publication date: 1980
+
+    [25] A. Cox, E. Gadd, S. Petersohn, and L. Sbafi, “Competencies for bibliometrics,” JOURNAL OF LIBRARIANSHIP AND INFORMATION SCIENCE, vol. 51, no. 3, pp. 746-762, 2019, issn: 0961-0006. doi: 10.1177/ 0961000617728111.
+        Author: Cox, A.
+        Author: Gadd, E.
+        Author: Petersohn, S.
+        Journal title: ” JOURNAL OF LIBRARIANSHIP AND INFORMATION SCIENCE
+        Volume: 51
+        Issue: 3
+        Pages: 746-762
+        Publication date: 2019
+
+    [26] R. da Silva, F. Kalil, J. P. Moreira de Oliveira, and A. S. Martinez, “Universality in bibliometrics,” PHYSICA A-STATISTICAL MECHANICS AND ITS APPLICATIONS, vol. 391, no. 5, pp. 2119-2128, 2012, issn: 0378-4371. doi: 10.1016/j.physa.2011.11.021.
+        Title: and
+        Author: da Silva, R.
+        Author: Kalil, F.
+        Author: Moreira de Oliveira, J. P.
+        Author: Martinez, A. S.
+        Volume: 391
+        Issue: 5
+        Pages: 2119-2128
+        Publication date: 2012
+
+    [27] E MUNCHPETERSEN, “Bibliometrics and fiction,” LIBRI, vol. 31, no. 1, pp. 1-21, 1981, issn: 0024-2667.
+        Title: Bibliometrics and fiction
+        Author: MUNCHPETERSEN, E
+        Journal title: ” LIBRI
+        Volume: 31
+        Issue: 1
+        Pages: 1-21
+        Publication date: 1981
+
+    [28] E. Heinrich, M. Henderson, and P. Redmond, “Editorial: Ajet bibliometrics,” AUSTRALASIAN JOURNAL OF EDUCATIONAL TECHNOLOGY, vol. 36, no. 1, pp. I-IV, 2020, issn: 1449-3098. doi: 10.14742/ ajet.6146.
+        Author: Heinrich, E.
+        Author: Henderson, M.
+        Author: Redmond, P.
+        Author: pp. I-IV
+        Journal title: AUSTRALASIAN JOURNAL OF EDUCATIONAL TECHNOLOGY
+        Volume: 36
+        Issue: 1
+        Pages: 1449-3098
+        Publication date: 2020
+
+    [29] B. BROOKES, “Bibliometrics at luc diepenbeek,” JOURNAL OF INFORMATION SCIENCE, vol. 14, no. 1, pp. 63-64, 1988, issn: 0165-5515.
+        Author: B. BROOKES
+        Journal title: ” JOURNAL OF INFORMATION SCIENCE
+        Volume: 14
+        Issue: 1
+        Pages: 63-64
+        Publication date: 1988
+
+    [30] T BRAUN, “Bibliometrics in research evaluation,” JOURNAL OF INFORMATION SCIENCE, vol. 14, no. 6, pp. 365-366, 1988, issn: 0165- 5515.
+        Author: BRAUN, T
+        Journal title: ” JOURNAL OF INFORMATION SCIENCE
+        Volume: 14
+        Issue: 6
+        Pages: 365-366
+        Publication date: 1988
+
+    [31] P. Rossi, A. Strumia, and R. Torre, “Bibliometrics for collaboration works,” in 17TH INTERNATIONAL CONFERENCE ON SCIENTOMETRICS & INFORMETRICS (ISSI2019), VOL I, G Catalano, C Daraio, M Gregori, H. Moed, and G Ruocco, Eds., ser. Proceedings of the International Conference on Scientometrics and Informetrics, 17th International Conference of the International-Society-for-Scientometrics-and-Informetrics (ISSI) on Scientometrics and Informetrics, Sapienza Univ Rome, Rome, ITALY, SEP 02-05, 2019, Int Soc Scientometr & Informetr, 2019, pp. 975- 983, isbn: 978-88-3381-118-5.
+        Title: Bibliometrics for collaboration works
+        Author: Rossi, P.
+        Author: Strumia, A.
+        Author: Torre, R.
+        Author: Daraio, C
+        Author: Gregori, M
+        Author: Moed, H.
+        Author: Informetrics
+        Journal title: ” in 17TH INTERNATIONAL CONFERENCE ON SCIENTOMETRICS & INFORMETRICS (ISSI2019)
+        Volume: 02
+        Issue: 05
+        Pages: 975-983
+        Publication date: 2019
+
+    [32] M. J. Kurtz, “Comparing people with bibliometrics,” in LIBRARY AND INFORMATION SERVICES IN ASTRONOMY VIII: ASTRONOMY LIBRARIANSHIP IN THE ERA OF BIG DATA AND OPEN SCIENCE, S Lesteven, B Kern, R DAbrusco, and B Dorch, Eds., ser. EPJ Web of Conferences, Meeting on Library and Information Services in Astronomy VIII - Astronomy Librarianship in the Era of Big Data and Open Science, Observatoire Astronomique Strasbourg, Strasbourg, FRANCE, JUN 06-09, 2017, Astron & Astrophys; Centre Donnees Astronomique Strasbourg; Amer Astron Soc; SPIE Digital Lib; Monthly Notices Royal Astron Soc; IOP Sci; ESO; Elsevier; Springer Nature; Strasbourg Univ; City Strasbourg Eurometropole; Reg Grand Est; INSU CNRS, vol. 186, 2018, isbn: 978-2-7598-9054-5. doi: 10.1051/epjconf/201818606004.
+        Title: Comparing people with bibliometrics,” in LIBRARY AND INFORMATION SERVICES IN ASTRONOMY VIII: ASTRONOMY LIBRARIANSHIP IN THE ERA OF BIG DATA
+        Author: M. J. Kurtz
+        Author: Lesteven, S
+        Author: B Kern
+        Journal title: EPJ Web of Conferences
+        Volume: 06
+        Issue: 09
+        Pages: 978
+        Publication date: 2017
+
+    [33] I. Arsenova, “New application of bibliometrics,” in PROCEEDINGS OF THE 2ND INTERNATIONAL CONFERENCE ON INTEGRATED INFORMATION (IC-ININFO 2012), G Giannakopoulos, D. Sakas, D. Vlachos, and D KyriakiManessi, Eds., ser. Procedia Social and Behavioral Sciences, 2nd International Conference on Integrated Information (ICININFO), Budapest, HUNGARY, AUG 30-SEP 03, 2012, vol. 73, 2013, pp. 678-682. doi: 10.1016/j.sbspro.2013.02.105.
+        Author: I. Arsenova
+        Author: Giannakopoulos, G
+        Author: Sakas, D.
+        Author: Vlachos, D.
+        Author: KyriakiManessi, D
+        Journal title: in PROCEEDINGS OF THE 2ND INTERNATIONAL CONFERENCE ON INTEGRATED INFORMATION (IC-ININFO
+        Volume: 73
+        Pages: 678-682
+        Publication date: 2012
+
+    [34] J. Manthorpe, “Bibliometrics in social work,” BRITISH JOURNAL OF SOCIAL WORK, vol. 37, no. 5, pp. 951-953, 2007, issn: 0045-3102. doi: 10.1093/bjsw/bcm078.
+        Author: Manthorpe, J.
+        Journal title: BRITISH JOURNAL OF SOCIAL WORK
+        Volume: 37
+        Issue: 5
+        Pages: 951-953
+        Publication date: 2007
+
+    [35] G. Prathap, “Bibliometrics - problems and promises,” CURRENT SCIENCE, vol. 108, no. 2, pp. 147-148, 2015, issn: 0011-3891.
+        Author: Prathap, G.
+        Journal title: ” CURRENT SCIENCE
+        Volume: 108
+        Issue: 2
+        Pages: 147-148
+        Publication date: 2015
+
+    [36] J. M. Gonzalez-Meijome, “Journal of optometry bibliometrics,” JOURNAL OF OPTOMETRY, vol. 13, no. 2, pp. 71-73, 2020, issn: 1888-4296. doi: 10.1016/j.optom.2020.03.005.
+        Author: Gonzalez-Meijome, J. M.
+        Journal title: ” JOURNAL OF OPTOMETRY
+        Volume: 13
+        Issue: 2
+        Pages: 71-73
+        Publication date: 2020
+
+    [37] C. Borgman and J Furner, “Scholarly communication and bibliometrics,” ANNUAL REVIEW OF INFORMATION SCIENCE AND TECHNOLOGY, vol. 36, pp. 3-72, 2002, issn: 0066-4200.
+        Title: Scholarly communication and bibliometrics,” ANNUAL REVIEW OF INFORMATION SCIENCE AND TECHNOLOGY
+        Author: Borgman, C.
+        Author: Furner, J
+        Volume: 36
+        Pages: 3-72
+        Publication date: 2002
+
+    [38] S. Greener, “Evaluating literature with bibliometrics,” INTERACTIVE LEARNING ENVIRONMENTS, vol. 30, no. 7, pp. 1168-1169, 2022, issn: 1049-4820. doi: 10.1080/10494820.2022.2118463.
+        Title: Evaluating literature with bibliometrics,” INTERACTIVE LEARNING ENVIRONMENTS
+        Author: Greener, S.
+        Volume: 30
+        Issue: 7
+        Pages: 1168-1169
+        Publication date: 2022
+
+    [39] R. Rousseau, “Forgotten founder of bibliometrics,” NATURE, vol. 510, no. 7504, p. 218, 2014, issn: 0028-0836. doi: 10.1038/510218e.
+        Author: Rousseau, R.
+        Journal title: ” NATURE
+        Volume: 510
+        Issue: 7504
+        Pages: 218-0836
+        Publication date: 2014
+
+    [40] H. Chang, J. Gausemeier, S. Ihmels, and C. Wenzelmann, “Technology intelligence with bibliometrics,” in IMECS 2007: INTERNATIONAL MULTICONFERENCE OF ENGINEERS AND COMPUTER SCIENTISTS, VOLS I AND II, ser. Lecture Notes in Engineering and Computer Science, International Multiconference of Engineers and Computer Scientists, Kowloon, PEOPLES R CHINA, MAR 21-23, 2007, 2007, pp. 796+, isbn: 978-988-98671-4-0.
+        Title: Technology intelligence with bibliometrics,” in IMECS 2007: INTERNATIONAL MULTICONFERENCE OF ENGINEERS AND COMPUTER SCIENTISTS, VOLS I AND II, ser
+        Author: Chang, H.
+        Author: Gausemeier, J.
+        Author: Ihmels, S.
+        Author: Wenzelmann, C.
+        Author: PEOPLES R CHINA
+        Journal title: MAR 21-23
+        Volume: 796
+        Pages: 978-988
+        Publication date: 2007
+
+    [41] D HICKS and D CROUCH, “Can bibliometrics measure up,” PHYSICS WORLD, vol. 3, no. 9, pp. 27-28, 1990, issn: 0953-8585. doi: 10.1088/ 2058-7058/3/9/23.
+        Title: Can bibliometrics measure up
+        Author: HICKS, D
+        Author: CROUCH, D
+        Journal title: ” PHYSICS WORLD
+        Volume: 3
+        Issue: 9
+        Pages: 27-28
+        Publication date: 1990
+
+    [42] A. T. Guler, C. J. F. Waaijer, and M. Palmblad, “Scientific workflows for bibliometrics,” in PROCEEDINGS OF ISSI 2015 ISTANBUL: 15TH INTERNATIONAL SOCIETY OF SCIENTOMETRICS AND INFORMETRICS CONFERENCE, A. Salah, Y Tonta, A. Salah, C Sugimoto, and U Al, Eds., ser. Proceedings of the International Conference on Scientometrics and Informetrics, 15th International Conference of the International-Society-for-Scientometrics-and-Informetrics (ISSI) on Scientometrics and Informetrics, Bogazici Univ, Istanbul, TURKEY, JUN 29-JUL 04, 2015, Int Soc Scientometr & Informetr; Hacettepe Univ; Sci & Technol Res Council Turkey, Turkish Acad Network & Informat Ctr, 2015, pp. 1029-1034, isbn: 978-975-518-381-7.
+        Title: Scientific workflows for bibliometrics,”
+        Author: Guler, A. T.
+        Author: Waaijer, C. J. F.
+        Author: Palmblad, M.
+        Author: Tonta, Y
+        Author: Salah, A.
+        Author: Sugimoto, C
+        Author: Informetrics
+        Journal title: in PROCEEDINGS OF ISSI 2015 ISTANBUL: 15TH INTERNATIONAL SOCIETY OF SCIENTOMETRICS AND INFORMETRICS CONFERENCE
+        Pages: 1029-1034
+        Publication date: 2015
+
+    [43] M KUNZ, “About metrics of bibliometrics,” JOURNAL OF CHEMICAL INFORMATION AND COMPUTER SCIENCES, vol. 33, no. 2, pp. 193- 196, 1993, issn: 0095-2338. doi: 10.1021/ci00012a002.
+        Title: About metrics of bibliometrics,”
+        Author: M KUNZ
+        Journal title: JOURNAL OF CHEMICAL INFORMATION AND COMPUTER SCIENCES
+        Volume: 33
+        Issue: 2
+        Pages: 193-196
+        Publication date: 1993
+
+    [44] M. LINE, “The importance of bibliometrics,” LIBRARY JOURNAL, vol. 112, no. 18, p. 10, 1987, issn: 0363-0277.
+        Title: The importance of bibliometrics,”
+        Author: M. LINE
+        Journal title: LIBRARY JOURNAL
+        Volume: 112
+        Issue: 18
+        Pages: 10-0277
+        Publication date: 1987
+
+    [45] G. Lewison, “Preparation of bibliometrics papers,” ANAIS DA ACADEMIA BRASILEIRA DE CIENCIAS, vol. 92, no. 3, 2020, issn: 0001-3765. doi: 10.1590/0001-3765202020201327.
+        Author: Lewison, G.
+        Author: ANAIS DA ACADEMIA BRASILEIRA DE, CIENCIAS
+        Volume: 92
+        Issue: 3
+        Pages: 0001-3765
+        Publication date: 2020
+
+    [46] E. Heinrich, M. Henderson, and P. Redmond, “Ajet bibliometrics and licensing,” AUSTRALASIAN JOURNAL OF EDUCATIONAL TECHNOLOGY, vol. 35, no. 1, pp. I-IV, 2019, issn: 1449-3098.
+        Title: Ajet bibliometrics
+        Author: Heinrich, E.
+        Author: Henderson, M.
+        Author: Redmond, P.
+        Author: pp. I-IV
+        Journal title: AUSTRALASIAN JOURNAL OF EDUCATIONAL TECHNOLOGY
+        Volume: 35
+        Issue: 1
+        Pages: 1449-3098
+        Publication date: 2019
+
+    [47] G. E. Hunt, “Making sense of bibliometrics,” ACTA NEUROPSYCHIATRICA, vol. 23, no. 2, pp. 80-81, 2011, issn: 0924-2708. doi: 10.1111/ j.1601-5215.2011.00534.x.
+        Title: Making sense of bibliometrics,”
+        Author: Hunt, G. E.
+        Journal title: ACTA NEUROPSYCHIATRICA
+        Volume: 23
+        Issue: 2
+        Pages: 80-81
+        Publication date: 2011
+
+    [48] R. BROADUS, “Early approaches to bibliometrics,” JOURNAL OF THE AMERICAN SOCIETY FOR INFORMATION SCIENCE, vol. 38, no. 2, pp. 127-129, 1987, issn: 0002-8231. doi: 10.1002/(SICI)1097-4571(198703) 38:2<127::AID-ASI6>3.0.CO;2-K.
+        Title: Early approaches to bibliometrics,” JOURNAL OF THE AMERICAN SOCIETY FOR INFORMATION SCIENCE
+        Author: R. BROADUS
+        Volume: 38
+        Issue: 2
+        Pages: 127-129
+        Publication date: 1987
+
+    [49] J. M. Russell, M. Victoria Guzman, I. Aguillo, F. Collazo Reyes, and R. Mugnaini, “International seminar on bibliometrics,” TRANSINFORMACAO, vol. 26, no. 3, pp. 227-228, 2014, issn: 0103-3786. doi: 10.1590/ 0103-3786201400030001a.
+        Author: J. M. Russell, M. Victoria
+        Author: Guzman, I.
+        Author: Aguillo, F.
+        Author: Collazo Reyes, R.
+        Author: Mugnaini
+        Journal title: ” TRANSINFORMACAO
+        Volume: 26
+        Issue: 3
+        Pages: 227-228
+        Publication date: 2014
+
+    [50] B Cronin, “Semiotics and evaluative bibliometrics,” JOURNAL OF DOCUMENTATION, vol. 56, no. 4, pp. 440-453, 2000, issn: 0022-0418. doi: 10.1108/EUM0000000007123.
+        Author: Cronin, B
+        Journal title: ” JOURNAL OF DOCUMENTATION
+        Volume: 56
+        Issue: 4
+        Pages: 440-453
+        Publication date: 2000
+
+    [51] K. McCain, “Dictionary of bibliometrics - response,” JOURNAL OF THE AMERICAN SOCIETY FOR INFORMATION SCIENCE, vol. 48, no. 5, pp. 480-481, 1997, issn: 0002-8231.
+        Title: Dictionary of bibliometrics - response,” JOURNAL OF THE AMERICAN SOCIETY FOR INFORMATION SCIENCE
+        Author: McCain, K.
+        Volume: 48
+        Issue: 5
+        Pages: 480-481
+        Publication date: 1997
+
+    [52] A PRITCHARD, “Statistical bibliography or bibliometrics,” JOURNAL OF DOCUMENTATION, vol. 25, no. 4, pp. 348+, 1969, issn: 0022-0418.
+        Title: Statistical bibliography or bibliometrics
+        Author: A, PRITCHARD
+        Journal title: ” JOURNAL OF DOCUMENTATION
+        Volume: 25
+        Issue: 4
+        Pages: 0022-0418
+        Publication date: 1969
+
+    [53] A. T. Guler, C. J. F. Waaijer, and M. Palmblad, “Scientific workflows for bibliometrics,” SCIENTOMETRICS, vol. 107, no. 2, pp. 385-398, 2016, 15th International Conference of the International-Society-for-Scientometricsand-Informetrics (ISSI) on Scientometrics and Informetrics, Bogazici Univ, Istanbul, TURKEY, JUN 29-JUL 04, 2015, issn: 0138-9130. doi: 10 . 1007/s11192-016-1885-6.
+        Title: Scientific workflows for bibliometrics
+        Author: Guler, A. T.
+        Author: Waaijer, C. J. F.
+        Author: Palmblad, M.
+        Journal title: ” SCIENTOMETRICS
+        Volume: 107
+        Issue: 2
+        Pages: 385-398
+        Publication date: 2016
+
+    [54] C CAMPOS and F. REDONDO, “Bibliometrics and clinical-chemistry,” CLINICAL CHEMISTRY, vol. 37, no. 2, pp. 303-304, 1991, issn: 0009- 9147.
+        Title: Bibliometrics and clinical-chemistry,” CLINICAL CHEMISTRY
+        Author: CAMPOS and F. REDONDO, C
+        Volume: 37
+        Issue: 2
+        Pages: 303-304
+        Publication date: 1991
+
+    [55] G. Prathap, “Introduction to bibliometrics and scientometrics,” ANNALS OF LIBRARY AND INFORMATION STUDIES, vol. 69, no. 4, p. 327, 2022, issn: 0972-5423. doi: 10.56042/alis.v69i4.69731.
+        Title: Introduction to bibliometrics and scientometrics,” ANNALS OF LIBRARY AND INFORMATION STUDIES
+        Author: Prathap, G.
+        Volume: 69
+        Issue: 4
+        Pages: 327-5423
+        Publication date: 2022
+
+    [56] F NARIN, D OLIVASTRO, and K. STEVENS, “Bibliometrics theory, practice and problems,” EVALUATION REVIEW, vol. 18, no. 1, pp. 65- 76, 1994, issn: 0193-841X. doi: 10.1177/0193841X9401800107.
+        Title: and
+        Author: NARIN, F
+        Author: OLIVASTRO, D
+        Volume: 18
+        Issue: 1
+        Pages: 65-76
+        Publication date: 1994
+
+    [57] D. J. Hicks, “Bibliometrics for social validation,” PLOS ONE, vol. 11, no. 12, 2016, issn: 1932-6203. doi: 10.1371/journal.pone.0168597.
+        Title: Bibliometrics for social validation
+        Author: Hicks, D. J.
+        Journal title: ” PLOS ONE
+        Volume: 11
+        Issue: 12
+        Pages: 1932-6203
+        Publication date: 2016
+
+    [58] R. DANIEL, “Bibliometrics and scholarly impact,” AMERICAN PSYCHOLOGIST, vol. 34, no. 8, pp. 725-726, 1979, issn: 0003-066X. doi: 10.1037/0003-066X.34.8.725.
+        Author: R. DANIEL
+        Journal title: ” AMERICAN PSYCHOLOGIST
+        Volume: 34
+        Issue: 8
+        Pages: 725-726
+        Publication date: 1979
+
+    [59] D. Zimmer, “Bibliometrics: Simple - understandable - comprehensible,” ZEITSCHRIFT FUR BIBLIOTHEKSWESEN UND BIBLIOGRAPHIE, vol. 61, no. 6, pp. 388-389, 2014, issn: 0044-2380.
+        Title: ZEITSCHRIFT FUR BIBLIOTHEKSWESEN UND BIBLIOGRAPHIE
+        Author: Zimmer, D.
+        Volume: 61
+        Issue: 6
+        Pages: 388-389
+        Publication date: 2014
+
+    [60] J. MCLAIN, “Bibliometrics toolbox - brooks,ta,” JOURNAL OF THE AMERICAN SOCIETY FOR INFORMATION SCIENCE, vol. 41, no. 1, pp. 70-71, 1990, issn: 0002-8231. doi: 10.1002/(SICI)1097-4571(199001) 41:1<70::AID-ASI8>3.0.CO;2-J.
+        Title: :AID-ASI8>3.0
+        Author: Bibliometrics, J. MCLAIN
+        Journal title: ” JOURNAL OF THE AMERICAN SOCIETY FOR INFORMATION SCIENCE
+        Volume: 41
+        Issue: 1
+        Pages: 70-71
+        Publication date: 1990
+
+    [61] L. Bornmann, “Bibliometrics-based decision trees (bbdts) based on bibliometricsbased heuristics (bbhs): Visualized guidelines for the use of bibliometrics in research evaluation,” QUANTITATIVE SCIENCE STUDIES, vol. 1, no. 1, pp. 171-182, 2020. doi: 10.1162/qss\_a\_00012.
+        Title: Bibliometrics-based decision trees (bbdts) based on bibliometricsbased heuristics (bbhs): Visualized guidelines for the use of bibliometrics in research evaluation,” QUANTITATIVE SCIENCE STUDIES
+        Author: Bornmann, L.
+        Volume: 1
+        Issue: 1
+        Pages: 171-182
+        Publication date: 2020
+
+    [62] M. Yilmaz, “A critical view on bibliometrics,” TURKISH LIBRARIANSHIP, vol. 33, no. 1, pp. 43-49, 2019, issn: 1300-0039. doi: 10.24146/ tkd.2019.47.
+        Title: A critical view on bibliometrics,” TURKISH LIBRARIANSHIP
+        Author: Yilmaz, M.
+        Volume: 33
+        Issue: 1
+        Pages: 43-49
+        Publication date: 2019
+
+    [63] E. C. Friedberg, “A closer look at bibliometrics,” DNA REPAIR, vol. 9, no. 10, pp. 1018-1020, 2010, issn: 1568-7864. doi: 10.1016/j.dnarep. 2010.07.010.
+        Title: A closer look at bibliometrics,” DNA REPAIR
+        Author: Friedberg, E. C.
+        Volume: 9
+        Issue: 10
+        Pages: 1018-1020
+        Publication date: 2010
+
+    [64] Q Burrell, “Dictionary of bibliometrics - diodato,v,” JOURNAL OF DOCUMENTATION, vol. 51, no. 4, pp. 448-450, 1995, issn: 0022-0418.
+        Author: Burrell, Q
+        Journal title: ” JOURNAL OF DOCUMENTATION
+        Volume: 51
+        Issue: 4
+        Pages: 448-450
+        Publication date: 1995
+
+    [65] C. Stefanis, E. Giorgi, G. Tselemponis, et al., “Terroir in view of bibliometrics,” STATS, vol. 6, no. 4, pp. 956-979, 2023. doi: 10 . 3390 / stats6040060.
+        Author: Stefanis, C.
+        Author: Tselemponis, G.
+        Journal title: ” STATS
+        Volume: 6
+        Issue: 4
+        Pages: 956-979
+        Publication date: 2023
+
+    [66] K. Borgoyakova and A. Zemskov, “Bibliometrics and hunting the predators,” NAUCHNYE I TEKHNICHESKIE BIBLIOTEKI-SCIENTIFIC AND TECHNICAL LIBRARIES, no. 2, pp. 89-100, 2018, issn: 0130- 9765.
+        Title: Bibliometrics and hunting the predators,” NAUCHNYE I TEKHNICHESKIE BIBLIOTEKI-SCIENTIFIC AND TECHNICAL LIBRARIES
+        Author: Borgoyakova, K.
+        Author: Zemskov, A.
+        Issue: 2
+        Pages: 89-100
+        Publication date: 2018
+
+    [67] J. Kamalski and A. Kirby, “Bibliometrics and urban knowledge transfer,” CITIES, vol. 29, no. 2, SI, S3-S8, 2012, issn: 0264-2751. doi: 10.1016/ j.cities.2012.06.012.
+        Title: Bibliometrics and urban knowledge transfer,” CITIES
+        Author: Kamalski, J.
+        Author: Kirby, A.
+        Author: SI
+        Volume: 29
+        Issue: 2
+        Pages: S3-S8
+        Publication date: 2012
+
+    [68] B. PERITZ, “A bradford distribution for bibliometrics,” SCIENTOMETRICS, vol. 18, no. 5-6, pp. 323-329, 1990, issn: 0138-9130. doi: 10.1007/ BF02020148.
+        Title: A bradford distribution for bibliometrics
+        Author: B. PERITZ
+        Journal title: ” SCIENTOMETRICS
+        Volume: 18
+        Issue: 5-6
+        Pages: 323-329
+        Publication date: 1990
+
+    [69] A. J. Nederhof, R. J. W. Tijssen, and H. F. Moed, “Anthony van raan and bibliometrics,” RESEARCH EVALUATION, vol. 19, no. 3, SI, pp. 158- 160, 2010, issn: 0958-2029. doi: 10.3152/095820210X516560;.
+        Author: Nederhof, A. J.
+        Author: Tijssen, R. J. W.
+        Author: Moed, H. F.
+        Journal title: ” RESEARCH EVALUATION
+        Volume: 19
+        Issue: 3
+        Pages: 158-160
+        Publication date: 2010
+
+    [70] A. Keramatfar and H. Amirkhani, “Bibliometrics of sentiment analysis literature,” JOURNAL OF INFORMATION SCIENCE, vol. 45, no. 1, pp. 3-15, 2019, issn: 0165-5515. doi: 10.1177/0165551518761013.
+        Title: Bibliometrics of sentiment analysis literature
+        Author: Keramatfar, A.
+        Author: Amirkhani, H.
+        Journal title: ” JOURNAL OF INFORMATION SCIENCE
+        Volume: 45
+        Issue: 1
+        Pages: 3-15
+        Publication date: 2019
+
+    [71] I. M. Johnson, “Bibliometrics and the brain dead,” INFORMATION DEVELOPMENT, vol. 27, no. 2, pp. 92-93, 2011, issn: 0266-6669. doi: 10.1177/0266666911404012.
+        Title: Bibliometrics and the brain dead
+        Author: Johnson, I. M.
+        Journal title: ” INFORMATION DEVELOPMENT
+        Volume: 27
+        Issue: 2
+        Pages: 92-93
+        Publication date: 2011
+
+    [72] P. Brimblecombe and C. M. Grossi, “The bibliometrics of atmospheric environment,” ATMOSPHERIC ENVIRONMENT, vol. 43, no. 1, pp. 9- 12, 2009, issn: 1352-2310. doi: 10.1016/j.atmosenv.2008.09.037.
+        Title: The bibliometrics of atmospheric environment,” ATMOSPHERIC ENVIRONMENT
+        Author: Brimblecombe, P.
+        Author: C. M. Grossi
+        Volume: 43
+        Issue: 1
+        Pages: 9-12
+        Publication date: 2009
+
+    [73] R TODOROV and W GLAENZEL, “Computer bibliometrics for journal classification,” INFORMATION PROCESSING & MANAGEMENT, vol. 26, no. 5, pp. 673-680, 1990, COLLOQUIUM ON EVALUATION AND DOCUMENTARY INFORMATION SYSTEMS, UNIV BORDEAUX III, BORDEAUX, FRANCE, NOV 24-25, 1988, issn: 0306-4573. doi: 10.1016/0306-4573(90)90109-F.
+        Title: Computer bibliometrics for journal classification
+        Author: TODOROV, R
+        Author: W GLAENZEL
+        Author: COLLOQUIUM
+        Journal title: ” INFORMATION PROCESSING & MANAGEMENT
+        Volume: 26
+        Issue: 5
+        Pages: 673-680
+        Publication date: 1990
+
+    [88] W. AIYEPEKU, “Bibliometrics in information-science curricula,” INFORMATION SCIENTIST, vol. 9, no. 1, pp. 29-34, 1975.
+        Title: Bibliometrics in information-science curricula
+        Author: W. AIYEPEKU
+        Journal title: ” INFORMATION SCIENTIST
+        Volume: 9
+        Issue: 1
+        Pages: 29-34
+        Publication date: 1975
+
+    [89] L. Bornmann and F. de Moya-Anegon, “Spatial bibliometrics on the city level,” JOURNAL OF INFORMATION SCIENCE, vol. 45, no. 3, pp. 416-425, 2019, issn: 0165-5515. doi: 10.1177/0165551518806119.
+        Title: Spatial bibliometrics on the city level
+        Author: Bornmann, L.
+        Journal title: ” JOURNAL OF INFORMATION SCIENCE
+        Volume: 45
+        Issue: 3
+        Pages: 416-425
+        Publication date: 2019
+
+    [90] M. Langheinrich, “Bibliometrics-measuring pervasive computing's impact,” IEEE PERVASIVE COMPUTING, vol. 17, no. 3, pp. 6-9, 2018, issn: 1536-1268. doi: 10.1109/MPRV.2018.03367729.
+        Title: Bibliometrics-measuring pervasive computing's impact,” IEEE PERVASIVE COMPUTING
+        Author: Langheinrich, M.
+        Volume: 17
+        Issue: 3
+        Pages: 6-9
+        Publication date: 2018
+
+    [91] M. McEnery-Stonelake and J. D. Bernhard, “The bibliometrics of itch: 2017 update,” ACTA DERMATO-VENEREOLOGICA, vol. 97, no. 8, p. 1051, 2017, issn: 0001-5555.
+        Title: The bibliometrics of itch: 2017 update,”
+        Author: McEnery-Stonelake, M.
+        Author: Bernhard, J. D.
+        Journal title: ACTA DERMATO-VENEREOLOGICA
+        Volume: 97
+        Issue: 8
+        Pages: 1051-5555
+        Publication date: 2017
+
+    [92] W PAISLEY, “Bibliometrics, scholarly communication, and communicationresearch,” COMMUNICATION RESEARCH, vol. 16, no. 5, pp. 701-717, 1989, issn: 0093-6502. doi: 10.1177/009365089016005010.
+        Author: W PAISLEY
+        Journal title: COMMUNICATION RESEARCH
+        Volume: 16
+        Issue: 5
+        Pages: 701-717
+        Publication date: 1989
+
+    [93] F. LANCASTER and S. ABDULLAH, “Science and politics - some bibliometrics analysis,” in SCIENCE INDICATORS FOR DEVELOPING COUNTRIES, R Arvanitis and J Gaillard, Eds., ser. COLLOQUES ET SEMINAIRES, International Conference on Science Indicators for Developing Countries, UNESCO, PARIS, FRANCE, OCT 15-19, 1990, 1992, pp. 319-331, isbn: 2-7099-1082-9.
+        Title: Science and politics - some bibliometrics analysis,” in SCIENCE INDICATORS FOR DEVELOPING COUNTRIES, R Arvanitis and
+        Author: LANCASTER, F.
+        Author: S. ABDULLAH
+        Author: UNESCO
+        Journal title: COLLOQUES ET SEMINAIRES, International Conference on Science Indicators for Developing Countries
+        Issue: 19
+        Pages: 319-331
+        Publication date: 1990
+
+    [94] E. WHITE, “Bibliometrics - from curiosity to convention,” SPECIAL LIBRARIES, vol. 76, no. 1, pp. 35-42, 1985, issn: 0038-6723.
+        Author: E. WHITE,
+        Journal title: SPECIAL LIBRARIES
+        Volume: 76
+        Issue: 1
+        Pages: 35-42
+        Publication date: 1985
+
+    [95] G. Dzelalija and M. Roic, “Bibliometrics on public utilities registration research,” LAND, vol. 12, no. 5, 2023. doi: 10.3390/land12051097.
+        Author: Dzelalija and M. Roic, G.
+        Journal title: ” LAND
+        Volume: 12
+        Issue: 5
+        Publication date: 2023
+
+    [96] J. Neufeld and M. von Ins, “Informed peer review and uninformed bibliometrics?” RESEARCH EVALUATION, vol. 20, no. 1, SI, pp. 31-46, 2011, issn: 0958-2029. doi: 10.3152/095820211X12941371876382.
+        Title: Informed peer review and uninformed bibliometrics?” RESEARCH EVALUATION
+        Author: Neufeld, J.
+        Volume: 20
+        Issue: 1
+        Pages: 31-46
+        Publication date: 2011
+
+    [97] M Traynor and A. Raferty, “Bibliometrics and a culture of measurement,” JOURNAL OF ADVANCED NURSING, vol. 36, no. 2, pp. 167- 168, 2001, issn: 0309-2402. doi: 10.1046/j.1365-2648.2001.02017.x.
+        Title: Bibliometrics and a culture of measurement,”
+        Author: Traynor, M
+        Author: Raferty, A.
+        Journal title: JOURNAL OF ADVANCED NURSING
+        Volume: 36
+        Issue: 2
+        Pages: 167-168
+        Publication date: 2001
+
+    [98] S. HARTER, “Scholarly communication and bibliometrics - borgman,cl,” JOURNAL OF DOCUMENTATION, vol. 48, no. 3, pp. 333-336, 1992, issn: 0022-0418.
+        Title: Scholarly communication and bibliometrics - borgman
+        Author: S. HARTER
+        Journal title: ” JOURNAL OF DOCUMENTATION
+        Volume: 48
+        Issue: 3
+        Pages: 333-336
+        Publication date: 1992
+
+    [99] C. Gumpenberger, M. Wieland, and J. Gorraiz, “Bibliometrics and libraries - a promising liaison,” ZEITSCHRIFT FUR BIBLIOTHEKSWESEN UND BIBLIOGRAPHIE, vol. 61, no. 4-5, pp. 247-250, 2014, issn: 0044-2380.
+        Title: Bibliometrics and libraries - a promising liaison,” ZEITSCHRIFT FUR BIBLIOTHEKSWESEN UND BIBLIOGRAPHIE
+        Author: Gumpenberger, C.
+        Author: Wieland, M.
+        Author: Gorraiz, J.
+        Volume: 61
+        Issue: 4-5
+        Pages: 247-250
+        Publication date: 2014
+
+    [100] R. U. Alvarado and C. RestrepoArango, “Brazilian bibliometrics: Difusion of its literature,” REVISTA IBERO-AMERICANA DE CIENCIA DA INFORMACAO, vol. 13, no. 1, pp. 200-222, 2020, issn: 1983-5213. doi: 10.26512/rici.v13.n1.2020.27922.
+        Title: Brazilian bibliometrics: Difusion of its literature,” REVISTA
+        Author: Alvarado, R. U.
+        Author: IBERO-AMERICANA DE CIENCIA DA, INFORMACAO
+        Volume: 13
+        Issue: 1
+        Pages: 200-222
+        Publication date: 2020
+
