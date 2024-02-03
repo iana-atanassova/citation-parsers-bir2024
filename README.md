@@ -1,5 +1,6 @@
+# A Comparative Study of Generative LLMs and Traditional Out-of-the-box Citation Parsers
 
-This repository provides the data that was produced for the experiment reported in the paper by Iana Atanassova and Marc Bertin, submitted to the workshop BIR 2024. 
+This repository provides the data that was produced for the experiment reported in the paper by Iana Atanassova and Marc Bertin "Breaking Boundaries in Citation Parsing: A Comparative Study of Generative LLMs and Traditional Out-of-the-box Citation Parsers", submitted to the workshop BIR 2024. 
 
 
 ## Data
@@ -56,7 +57,7 @@ The data is organised as follows:
 ## Description
 
 Tags used in file parsers-output-comparison.csv: 
--  OK: correct
+- OK: correct
 - DIFF: parser's output is present and different from original bibtex entry
 - MISS: parser's output is missing
 - ADDED: parser's output is present, and the field is not is the original bibtex entry
@@ -69,9 +70,13 @@ The details on the processing and the normalization of the fields and labels tha
 
 To use this dataset and/or the results in this repository, please cite the following article:
 
-@inrpoceedings{atanassova2024citparse,
-	title = {}, 
+@inproceedings{atanassova2024citparse,
+	title = {{Breaking Boundaries in Citation Parsing: A Comparative Study of Generative LLMs and Traditional Out-of-the-box Citation Parsers}}, 
 	author = {Iana Atanassova and Marc Bertin},
 	year = {2024},
-	...  paper under review at BIR 2024 workshop ...
+	booktitle = {Under review for BIR 2024 workshop}
 }
+
+Authors:
+- Iana Atanassova, ORCID https://orcid.org/0000-0003-3571-4006 URL https://iana-atanassova.github.io/
+- Marc Bertin, ORCID https://orcid.org/0000-0003-1803-6952 URL https://elico-recherche.msh-lse.fr/membres/marc-bertin
