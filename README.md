@@ -1,6 +1,8 @@
 # A Comparative Study of Generative LLMs and Traditional Out-of-the-box Citation Parsers
 
-This repository provides the data that was produced for the experiment reported in the paper by Iana Atanassova and Marc Bertin "Breaking Boundaries in Citation Parsing: A Comparative Study of Generative LLMs and Traditional Out-of-the-box Citation Parsers", submitted to the workshop BIR 2024. 
+This repository provides the data that was produced for the experiment reported in the paper:
+
+Iana Atanassova and Marc Bertin, 2024. "Breaking Boundaries in Citation Parsing: A Comparative Study of Generative LLMs and Traditional Out-of-the-box Citation Parsers", Bibliometric-enhanced Information Retrieval workshop (BIR), collocated with the 46th European Conference on Information Retrieval (ECIR 2024), Glasgow, Scotland. 
 
 
 ## Data
@@ -68,13 +70,26 @@ The details on the processing and the normalization of the fields and labels tha
 
 ## To cite this work
 
-To use this dataset and/or the results in this repository, please cite the following article:
+To use this dataset and/or the results in this repository, please cite the following article and its dataset:
 
 @inproceedings{atanassova2024citparse,
 	title = {{Breaking Boundaries in Citation Parsing: A Comparative Study of Generative LLMs and Traditional Out-of-the-box Citation Parsers}}, 
 	author = {Iana Atanassova and Marc Bertin},
 	year = {2024},
-	booktitle = {Under review for BIR 2024 workshop}
+	booktitle = {{International Workshop on Bibliometric-enhanced Information Retrieval (BIR 2024) co-located with the 46\textsuperscript{st} European Conference on Information Retrieval (ECIR 2024)}},
+	address = {Glasgow, Scotland}
+}
+
+@dataset{bertin_2024_10839503,
+  author       = {Bertin, Marc and
+                  Atanassova, Iana},
+  title        = {Synthetic Dataset of Citation Strings in 12 Styles},
+  month        = mar,
+  year         = 2024,
+  publisher    = {Zenodo},
+  version      = {1.0.0},
+  doi          = {10.5281/zenodo.10839503},
+  url          = {https://doi.org/10.5281/zenodo.10839503}
 }
 
 Authors:
